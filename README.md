@@ -4,7 +4,7 @@ Project description (~1 paragraph)
 
 ## Team Members and Roles
 
-* [link] (https://github.com/Lauren-Vanderklok/CIS641-HW2-Vanderklok "Lauren Vanderklok")
+* [Lauren Vanderklok] (https://github.com/Lauren-Vanderklok/CIS641-HW2-Vanderklok)
 * Member 2 (Role 3, Role 4)
 * Member 3 (Role 5, Role 6)
 
