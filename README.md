@@ -1,4 +1,4 @@
-# Team Name
+# GVSU-CIS641-Android-Game
 
 Project description (~1 paragraph)
 
