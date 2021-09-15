@@ -12,6 +12,7 @@ Team members:
 * Android
 * C#
 * Visual Studio
+* Pix2D pro
 
 # Method/Approach
 
