@@ -1,6 +1,6 @@
-Team name:
+Team name: Android Game
 
-Team members:
+Team members: 
 
 # Introduction
 
@@ -8,7 +8,10 @@ Team members:
 
 # Anticipated Technologies
 
-(What technologies are needed to build this project)
+Unity 2d
+Android
+C#
+Visual Studio
 
 # Method/Approach
 
@@ -20,4 +23,4 @@ Team members:
 
 # Anticipated Problems
 
-(Describe any problems you foresee that you will need to overcome)
+Anna and Trey need to become familiar with Unity and C# as they have no experience with using them. Lauren has used both before but has not used them in a few years and will need to become familiar again.  
