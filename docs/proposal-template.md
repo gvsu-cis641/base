@@ -8,10 +8,10 @@ Team members:
 
 # Anticipated Technologies
 
-Unity 2d
-Android
-C#
-Visual Studio
+* Unity 2d
+* Android
+* C#
+* Visual Studio
 
 # Method/Approach
 
