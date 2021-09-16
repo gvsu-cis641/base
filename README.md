@@ -1,4 +1,4 @@
-# Team Name
+# GVSU-CIS641-Team-S
 
 Project description (~1 paragraph)
 
@@ -6,7 +6,7 @@ Project description (~1 paragraph)
 
 * Hyeong Gyu Jang (Role TBD)
 * Srikar Pratap (Role TBD)
-* Member 3 (Role 5, Role 6)
+* Sudarshan Venkatesh (Role TBD)
 
 ## Prerequisites
 
