@@ -33,13 +33,13 @@ We have planned out what we want for the core of the application, in our timelin
 * Story: First tileset and player sprites done, Points: 8, Assigned to: Trey
 * Story: Have first level mapped out in unity, Points: 8, Assigned to: Anna
 * Story: Develop basic movement controls for Android, Points: 8, Assigned to: Lauren
-* TBD Sathya's stories
+* Story: Create key object scripts, Points: 10, Assigned to: Sathya
 
 
 ### Sprint 2 October 7 - October 20
 * Add ‘interact’ button to controls for collecting keys 
 * Add method for moving between areas 
-* Add key objects
+
 
 ### Sprint 3 October 21 -  November 3
 * Map out additional levels (number to be determined by remaining time)
