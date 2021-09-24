@@ -30,7 +30,7 @@ Our team is building a cross-platform mobile application for a university, where
 
 # Estimated Timeline
 
-1. Infrastrcuture setup (~ 2 weeks)
+1. Infrastructure setup (~ 2 weeks)
 2. Front-end design and Back-end design (~ 3 weeks)
 3. Integration (~ 2 weeks)
 4. Verification and Bugfixing (~ 2 weeks)
