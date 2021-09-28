@@ -17,7 +17,7 @@ Discussion points:
 * Member Background Experiences
     - Hyeong: Experienced in web app development
     - Srikar and Sudarshan: Experienced in web app development--own a fully-functional blockchain web app
-    - Purva: Experienced in both web and mobile app development
+    - Purva: Experienced in database queries
 * Settled Ideas
     - The team wants to create either web or mobile app that is deployed through AWS platform.
 * Potential Topics
