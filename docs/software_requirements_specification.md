@@ -4,5 +4,14 @@
 
 
 ## Functional Requirements
+1. Manage User Login:
+    1. 
+    1. 
+2. 
+3. 
+
 
 ## Non-Functional Requirements
+1. 
+2. 
+3. 
