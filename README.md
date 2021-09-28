@@ -9,6 +9,12 @@ Being away from home, in the land of strangers, a young college student can beco
 * [Sudarshan Venkatesh](https://github.com/sudsvenk/CIS641-HW2-VENKATESH) (Role TBD)
 * [Purva Tanmay Shah](https://github.com/Purva8852/CIS641-HW2-SHAH#cis641-hw2-shah) (Role TBD)
 
+## Documents
+1. [Meetings](https://github.com/Purva8852/GVSU-CIS641-Team-S/tree/master/meetings)
+2. [Project Proposal](https://github.com/Purva8852/GVSU-CIS641-Team-S/blob/master/docs/project-proposal.md)
+3. [Project Artifacts](https://github.com/Purva8852/GVSU-CIS641-Team-S/tree/master/artifacts)
+4. [Software Requirement Specifications](https://github.com/Purva8852/GVSU-CIS641-Team-S/blob/master/docs/software_requirements_specification.md)
+
 ## Prerequisites
 * React Native
 * AWS Console Management 
