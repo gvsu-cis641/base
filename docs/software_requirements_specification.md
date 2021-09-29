@@ -6,10 +6,10 @@ The purpose of software requirement specification document is to outline the req
 ## 2.Requirements
 ### 2.1 Functional Requirements
 1. Manage User Login:
-    - When user clicks on application, welcome screen shall display logo.
-    - Welcome screen shall display sign up and sign in button for selection. 
-    - Different page for sign up shall be created.
-    - Different page for sign in shall be created with forget password option.
+    1. When user clicks on application, welcome screen shall display logo.
+    2. Welcome screen shall display sign up and sign in button for selection. 
+    3. Different page for sign up shall be created.
+    4. Different page for sign in shall be created with forget password option.
 2. Profile Creation:
     1. After clicking on sign up option, users details shall be captured like - name, Vehicle details, home address.
     2. Option for verification of email shall be included after filling personal information. 
@@ -26,8 +26,11 @@ The purpose of software requirement specification document is to outline the req
     2. Application shall handle all student and staff members which is around 30K.
     3. Performance of the application shall be monitored using AWS cloudwatch.
     4. Based on some conditions users post shall be deleted.
+    5. Only post related to travel plan shall be posted.
+    6. Code for application shall be short and easily readable.
 2. Operational Requirement:
     1. The system shall be operated on an EC2 instance of AWS
     2. The system shall run on both android and iOS devices.
     3. All images for the application shall be uploaded in AWS S3.
+    4. The system shall store all of its data in NoSQL formate in DynamoDB of AWS.
     
