@@ -6,7 +6,7 @@ The purpose of software requirement specification document is to outline the req
 ## Functional Requirements
 1. Manage User Login:
     1. 
-    1. 
+    1.  
 2. 
 3. 
 
