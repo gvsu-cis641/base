@@ -5,19 +5,19 @@ The purpose of software requirement specification document is to outline the req
 
 ## 2.Requirements
 ### 2.1 Functional Requirements
-    1. **Manage User Login**:
-        1. When user clicks on application, welcome screen shall display logo.
-        2. Welcome screen shall display sign up and sign in button for selection. 
-        3. Different page for sign up shall be created.
-        4. Different page for sign in shall be created with forget password option.
-    2. **Profile Creation**:
-        1. After clicking on sign up option, users details shall be captured like - name, Vehicle details, home address.
-        2. Option for verification of email shall be included after filling personal information. 
-    3. **Operational Requirements**:
-        1. After successful login or profile creation user shall have option to select if they want to ride or offer a ride.
-        2. Option for post shall be available to both rider and passenger with boxes like start point, destination and time.
-        3. After posting a post only that user shall have access to delete post.
-        4. For replying to any existing post, comment box shall be included.
+**1. Manage User Login**:
+    1. When user clicks on application, welcome screen shall display logo.
+    2. Welcome screen shall display sign up and sign in button for selection. 
+    3. Different page for sign up shall be created.
+    4. Different page for sign in shall be created with forget password option.
+**2. Profile Creation**:
+    1. After clicking on sign up option, users details shall be captured like - name, Vehicle details, home address.
+    2. Option for verification of email shall be included after filling personal information. 
+**3. Operational Requirements**:
+    1. After successful login or profile creation user shall have option to select if they want to ride or offer a ride.
+    2. Option for post shall be available to both rider and passenger with boxes like start point, destination and time.
+    3. After posting a post only that user shall have access to delete post.
+    4. For replying to any existing post, comment box shall be included.
     
 
 ### 2.2 Non-Functional Requirements
