@@ -4,12 +4,13 @@ The purpose of software requirement specification document is to outline the req
 
 
 ## 2.Requirements
+
 ### 2.1 Functional Requirements
 1. Manage User Login:
-    1. When user clicks on application, welcome screen shall display logo.
-    2. Welcome screen shall display sign up and sign in button for selection. 
-    3. Different page for sign up shall be created.
-    4. Different page for sign in shall be created with forget password option.
+1. When user clicks on application, welcome screen shall display logo.
+1. Welcome screen shall display sign up and sign in button for selection. 
+1. Different page for sign up shall be created.
+1. Different page for sign in shall be created with forget password option.
 2. Profile Creation:
     1. After clicking on sign up option, users details shall be captured like - name, Vehicle details, home address.
     2. Option for verification of email shall be included after filling personal information. 
@@ -19,7 +20,6 @@ The purpose of software requirement specification document is to outline the req
     3. After posting a post only that user shall have access to delete post.
     4. For replying to any existing post, comment box shall be included.
     
-
 ### 2.2 Non-Functional Requirements
 1. Quality:
     1. All user shall have valid GVSU email address.
