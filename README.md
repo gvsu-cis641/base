@@ -4,10 +4,10 @@ Being away from home, in the land of strangers, a young college student can beco
 
 ## Team Members and Roles
 
-* [Hyeong Gyu Jang](https://github.com/hyeonggyujang/CIS641-HW2-Jang) (Role TBD)
-* [Srikar Pratap](https://github.com/SrikarPratap/CIS641-HW2-PRATAP) (Role TBD)
-* [Sudarshan Venkatesh](https://github.com/sudsvenk/CIS641-HW2-VENKATESH) (Role TBD)
-* [Purva Tanmay Shah](https://github.com/Purva8852/CIS641-HW2-SHAH#cis641-hw2-shah) (Role TBD)
+* [Hyeong Gyu Jang](https://github.com/hyeonggyujang/CIS641-HW2-Jang) - bankend Developer
+* [Srikar Pratap](https://github.com/SrikarPratap/CIS641-HW2-PRATAP) - front-end Developer
+* [Sudarshan Venkatesh](https://github.com/sudsvenk/CIS641-HW2-VENKATESH) - bankend Developer
+* [Purva Tanmay Shah](https://github.com/Purva8852/CIS641-HW2-SHAH#cis641-hw2-shah) - front-end Developer
 
 ## Documents
 1. [Meetings](https://github.com/Purva8852/GVSU-CIS641-Team-S/tree/master/meetings)
