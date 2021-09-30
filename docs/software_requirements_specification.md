@@ -18,7 +18,8 @@ The purpose of software requirement specification document is to outline the req
     1. After successful login or profile creation user shall have option to select if they want to ride or offer a ride.
     2. Option for post shall be available to both rider and passenger with boxes like start point, destination and time.
     3. After posting a post only that user shall have access to delete post.
-    4. For replying to any existing post, comment box shall be included.
+    4. User shall have search bar to search any ride by typing destination.
+    5. For replying to any existing post, comment box shall be included.
     
 ### 2.2 Non-Functional Requirements
 1. Quality:
