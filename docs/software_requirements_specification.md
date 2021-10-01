@@ -18,7 +18,7 @@ The software requirement specification document outlines the requirements of Tea
     4. Sign-up form inputs shall be validated when the user presses submit button.
     5. A verfication email shall be sent to the user's email when the sign-up form validation is successful.
 3. Operational Requirements:
-    1. After successful login, the main board view shall be desplayed.
+    1. After successful login, the main board view shall be displayed.
     2. The main board view shall include a create-post button and a list of posts created by others.
     3. The user shall have option to select request-ride or offer-ride only if the user already registered a vehicle.
     4. If the user does not have a vehicles registered in the account, then the user shall only be able to create request-ride post.
