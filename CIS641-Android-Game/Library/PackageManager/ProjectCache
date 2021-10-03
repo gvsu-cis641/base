@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637683031799030576
-    m_Hash: 4022251721
+      ticks: 637683054610806676
+    m_Hash: 2102839510
   m_LockFileStatus:
     m_FilePath: C:/Users/laure/Unity Projects/GVSU-CIS641-Android-Game/CIS641-Android-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637683032004612191
-    m_Hash: 432854395
+      ticks: 637683054610806676
+    m_Hash: 988988081
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
