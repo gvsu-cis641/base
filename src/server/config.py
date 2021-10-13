@@ -1,5 +1,10 @@
 import os
-basedir = os.path.abspath(os.path.dirname(__file__))
+from dotenv import load_dotenv
+
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'team-s-secret'
+    load_dotenv()
+    SECRET_KEY = os.getenv('SECRET_KEY')
+    SERVER_IP_ADDRESS = os.getenv('IP_ADDRESS')
+    SERVER_PORT = os.getenv('PORT_NUMBER')
+    DEBUG_MODE = os.getenv('DEBUG')
