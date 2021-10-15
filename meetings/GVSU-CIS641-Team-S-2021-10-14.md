@@ -1,6 +1,6 @@
 # Meeting Overview
 
-During our fifth meeting, the group members discussed about midterm presentaion and additional working deliverables.
+During our fifth meeting, the group members discussed about midterm presentation and additional working deliverables.
 
 ## Meeting minutes template
 
@@ -21,5 +21,5 @@ Discussion points:
 * Reviewed our last week's tasks
 
 Goals for next week:
-* Perform a mock presentaion session on zoom and perfect the presentation on Sunday (10/17/2021)
+* Perform a mock presentation session on zoom and perfect the presentation on Sunday (10/17/2021)
 * Update this week's tasks 
