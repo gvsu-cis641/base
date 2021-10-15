@@ -1,10 +1,9 @@
 #Flask Framework
-Flask~==2.0.1
+Flask==2.0.1
 
 #AWS Integration
-boto3~==1.18.53
-awscli~==1.20.53
-Flask~=2.0.1
+boto3==1.18.53
+awscli==1.20.53
 
 #Other Libraries
-python-dotenv~=0.19.1
+python-dotenv==0.19.1
