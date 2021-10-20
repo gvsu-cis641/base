@@ -1,6 +1,6 @@
 # GVSU-CIS641-Team-S
 
-Being away from home, in the land of strangers, a young college student can become isolated from access to basic ammenities.Our team is building a cross-platform mobile application for a university, where all students and faculty members can join and share rides. Any member of our application can ask for a ride by simply posting a plan, and whichever member who has a vehicle can pick up the member who asked for a ride. Alternatively, any member who already owns a vehicle can post his/her plan to visit somewhere, and whoever fits the schdule can join the trip in first-come-first-serve basis.
+Being away from home, in the land of strangers, a young college student can become isolated from access to basic ammenities.Our team is building a cross-platform mobile application for a university, where all students and faculty members can join and share rides. Any member of our application can ask for a ride by simply posting a plan, and whichever member who has a vehicle can pick up the member who asked for a ride. Alternatively, any member who already owns a vehicle can post his/her plan to visit somewhere, and whoever fits the schedule can join the trip in first-come-first-serve basis.
 
 ## Team Members and Roles
 
