@@ -1,5 +1,6 @@
 #Flask Framework
 Flask==2.0.1
+PyJWT==2.3.0
 
 #AWS Integration
 boto3==1.18.53
