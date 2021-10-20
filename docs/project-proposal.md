@@ -4,7 +4,7 @@ Team members: Hyeong Gyu Jang, Srikar Pratap, Sudarshan Venkatesh, Purva Tanmay 
 
 # Introduction
     
-Being away from home, in the land of strangers, a young college student can become isoloated from access to basic ammenities. As being international students ourselves, the team members were deeply resonated with the need of a medium used for asking for a ride. Therefore, to satisfy such business needs, our team would like to develop a ride-sharing platform. With our application, any student can more easily have access to a grocery shop, to entertainments, and to the outside society.
+Being away from home, in the land of strangers, a young college student can become isoloated from access to basic amenities. As being international students ourselves, the team members were deeply resonated with the need of a medium used for asking for a ride. Therefore, to satisfy such business needs, our team would like to develop a ride-sharing platform. With our application, any student can more easily have access to a grocery shop, to entertainments, and to the outside society.
 
 Our team is building a cross-platform mobile application for a university, where all students and faculty members can join and share rides. Any member of our application can ask for a ride by simply posting a plan, and whichever member who has a vehicle can pick up the member who asked for a ride. Alternatively, any member who already owns a vehicle can post his/her plan to visit somewhere, and whoever fits the schdule can join the trip in first-come-first-serve basis. Ideally, our application can provide both convenience and safety in sharing rides within a friendly community where the security is better than it is in other commercial ride-sharing applications in the market.
 
