@@ -6,7 +6,7 @@ Technical progess and plans are discussed, and distributed the work.
 
 Team name: Team S
 
-Members present: Hyeong Gyu Jang, Purva Tanmay Shah, Srikar Pratap, Sudarshan Venkatesh
+Members present: Hyeong Gyu Jang, Srikar Pratap, Sudarshan Venkatesh
 <br>
 Member Absent: Purva Tanmay Shah
 
