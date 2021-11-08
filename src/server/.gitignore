@@ -1,4 +1,4 @@
 # Ignore Python Virtual Environment Contents
 venv/
 .idea/
-/.env
+./.env
