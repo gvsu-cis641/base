@@ -1,24 +1,25 @@
 # Meeting Overview
 
-Technical progess and plans are discussed, and distributed the work.
+During our fifth meeting, the group members discussed about midterm presentation and additional working deliverables.
 
 ## Meeting minutes template
 
 Team name: Team S
 
-Members present: Hyeong Gyu Jang, Purva Tanmay Shah, Srikar Pratap, Sudarshan Venkatesh
+Members present: Hyeong Gyu Jang, Purva Tanmay Shah, Srikar Pratap
 <br>
-Member Absent: Purva Tanmay Shah
+Member Absent: Sudarshan Venkatesh (Low mobile battery)
 
-Date: 11/03/2021
+Date: 10/14/2021
 
-Time: 17:30 ~ 17:45
+Time: 17:30 ~ 17:55
 
 Discussion points:
     
-* Tasks are created and assigned
-* Clarified how to pick-up and assign open tasks
-* Discussed potential CI/CD option for current EC2 instance as a further AWS integration topic
+* Talked about mid-term presentation and splited our roles for the presentation
+* Discussed about new working deliverables for next week
+* Reviewed our last week's tasks
 
 Goals for next week:
-* Finish whatever that's assigned to each member, and try to start a new task
+* Perform a mock presentation session on zoom and perfect the presentation on Sunday (10/17/2021)
+* Update this week's tasks 
