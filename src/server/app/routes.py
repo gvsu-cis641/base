@@ -1,4 +1,4 @@
-from app import app, db, usersController, postsController
+from app import app, db, usersController, postsController, emailHandler
 from flask import request, jsonify
 import jwt
 
@@ -10,6 +10,11 @@ def sign_up():
         'password': request.form['password']
     }
     password_receive = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
+    verification_code_payload = {
+        'email': email_receive,
+        'password': password_receive
+    }
+    verification_code = jwt.encode(verification_code_payload, app.config['SECRET_KEY'], algorithm="HS256")
     first_name_receive = request.form['first_name']
     last_name_receive = request.form['last_name']
     phone_receive = request.form['phone']
@@ -25,7 +30,16 @@ def sign_up():
         address_receive,
         sex_receive
     )
+    emailHandler.send_verification(first_name_receive, email_receive, verification_code)
     return response
+
+
+@app.route('/verify_email/<code>')
+def verify_email(code):
+    code_payload = jwt.decode(code, app.config['SECRET_KEY'], algorithms="HS256")
+    controller = usersController.UsersController(db)
+    response = controller.verify_user(code_payload['email'], code_payload['password'])
+    return 'Email Verification Success! Please return to the app.'
 
 
 @app.route('/sign_in', methods=['POST'])
@@ -37,10 +51,14 @@ def sign_in():
     password_receive = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
     controller = usersController.UsersController(db)
     response = controller.get_user(email_receive)
-    if response['Item']['password'] == password_receive:
+    if response['ResponseMetadata']['HTTPStatusCode'] == 404:
+        return jsonify({'result': 'user not found'})
+    if response['Item']['password'] != password_receive:
         return jsonify({'result': 'wrong password'})
-    else:
-        return jsonify({'result': 'wrong password'})
+    if not response['Item']['emailVerified']:
+        return jsonify({'result': 'email unverified'})
+
+    return jsonify({'result': 'success', 'email': email_receive})
 
 
 @app.route('/update_user', methods=['POST'])
@@ -65,6 +83,14 @@ def update_user():
         address_receive,
         sex_receive
         )
+    return response
+
+
+@app.route('/delete_user', methods=['POST'])
+def delete_user():
+    email_receive = request.form['email']
+    controller = usersController.UsersController(db)
+    response = controller.delete_user(email_receive)
     return response
 
 
