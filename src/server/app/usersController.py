@@ -22,9 +22,14 @@ class UsersController(object):
                 'email': email
             },
             AttributesToGet=[
-                'password'
+                'password',
+                'emailVerified'
             ]
         )
+        try:
+            item = response['Item']
+        except KeyError:
+            response['ResponseMetadata']['HTTPStatusCode'] = 404
         return response
 
     def edit_user(self, email, password, firstName, lastName, phone, address, sex):
@@ -60,5 +65,38 @@ class UsersController(object):
             },
 
             ReturnValues="UPDATED_NEW"
+        )
+        return response
+
+    def verify_user(self, email, password):
+        get_response = self.table.get_item(
+            Key={
+                'email': email
+            },
+            AttributesToGet=[
+                'password'
+            ]
+        )
+        if password == get_response['Item']['password']:
+            response = self.table.update_item(
+                Key={
+                    'email': email
+                },
+                AttributeUpdates={
+                    'emailVerified': {
+                        'Value': True,
+                        'Action': 'PUT'
+                    }
+                }
+            )
+            return response
+        else:
+            return 'bad request', 400
+
+    def delete_user(self, email):
+        response = self.table.delete_item(
+            Key={
+                'email': email
+            }
         )
         return response
