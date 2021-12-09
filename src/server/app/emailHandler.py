@@ -159,7 +159,7 @@ def send_verification(profile_name, recipient, code):
                                         <table border="0" cellspacing="0" cellpadding="0">
                                             <tr>
                                                 <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B">
-                                                    <a href="http://localhost:5000/verify_email/'''
+                                                    <a href="http://3.138.37.61/verify_email/'''
     html_tail = '''" target="_blank" style="font-size: 20px;
                                                     font-family: Helvetica, Arial, sans-serif;
                                                     color: #ffffff;
