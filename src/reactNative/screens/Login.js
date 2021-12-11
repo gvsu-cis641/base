@@ -126,7 +126,12 @@ function Login() {
 
       {/* Button */}
       <View style={styles.buttonStyle}>
-        <Button style={styles.buttonDesign} type="submit" onPress={handleSubmit(submitLoginForm)}>
+        <Button style={styles.buttonDesign} 
+        type="submit" 
+        onPress={
+        handleSubmit(submitLoginForm)
+        navigation.navigate("Profile")
+        }>
             LOGIN
         </Button>
       </View>
@@ -136,6 +141,10 @@ function Login() {
         <TouchableOpacity onPress={() => navigation.navigate("Signup")} ><Text style={styles.signupText}>Sign up</Text></TouchableOpacity>
       </View>
 
+      <View style={styles.text2}>
+        <Text>Have acc </Text>
+        <TouchableOpacity onPress={() => navigation.navigate("Profile")} ><Text style={styles.signupText}> Profile</Text></TouchableOpacity>
+      </View>      
       
     </View>
   );

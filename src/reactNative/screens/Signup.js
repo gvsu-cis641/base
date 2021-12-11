@@ -305,48 +305,6 @@ function Signup() {
 
       {/* Phone Input Field */}
       <View style={styles.buttonStyleX}>
-      <Controller        
-         control={control}        
-         name="phone"        
-         render={({field: {onChange, value}}) => (
-          <View style={styles.emailInput}>
-            <Input
-              value={value}
-              onChangeText={value => onChange(value)}
-              InputLeftElement={
-                <Icon
-                  as={<FontAwesome5 name="phone-alt" />}
-                  size="sm"
-                  m={2}
-                  _light={{
-                    color: "black",
-                  }}
-                  _dark={{
-                    color: "gray.300",
-                  }}
-                />
-              }
-              variant="outline"
-              secureTextEntry={false}
-              placeholder="Enter Phone Number"
-              _light={{
-                placeholderTextColor: "blueGray.400",
-              }}
-              _dark={{
-                placeholderTextColor: "blueGray.50",
-              }}
-            />
-          </View>
-         )} 
-      />
-      </View>
-
-      {/* Address Input Field */}
-      <View style={styles.buttonStyleX}>
-      <Controller        
-         control={control}        
-         name="address"        
-         render={({field: {onChange, value}}) => (
         <View style={styles.emailInput}>
         <Input
           value={value}
@@ -382,7 +340,7 @@ function Signup() {
       {/* Button */}
       <View style={styles.buttonStyle}>
         <Button style={styles.buttonDesign} type="submit" onPress={handleSubmit(submitSignUpForm)}>
-            REGISTER NOW
+            <Text style={styles.signupText}>REGISTER NOW</Text>
         </Button>
       </View>
     </View>
