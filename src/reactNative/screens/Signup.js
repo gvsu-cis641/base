@@ -5,10 +5,27 @@ import { Input, NativeBaseProvider, Button, Icon, Box, Image, AspectRatio } from
 import { FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { alignContent, flex, flexDirection, width } from 'styled-system';
+import axios from 'axios';
+import { useForm, Controller } from "react-hook-form";
 
 
 function Signup() {
     const navigation = useNavigation();
+    const {
+      control, 
+      handleSubmit, 
+      formState: {errors, isValid}
+    } = useForm();
+    const url = 'http://3.138.37.61/sign_up';
+    const submitSignUpForm = async (data) => {
+      try {
+        const response = await axios.post( url, data );
+        console.log(response);
+        alert( 'SignUp Success!' );
+      } catch (err) {
+        console.log(err);
+      }
+    }
   return (
     <ScrollView style={styles.scrollView}>
     <View style={styles.container}>
@@ -20,11 +37,16 @@ function Signup() {
         <TouchableOpacity onPress={() => navigation.navigate("Login")} ><Text style={styles.signupText}> Login </Text></TouchableOpacity>
       </View>
       
-      {/* Username or Email Input Field */}
+      {/* First Name or Email Input Field */}
         <View style={styles.buttonStyle}>
-        
-            <View style={styles.emailInput}>
+        <Controller        
+         control={control}        
+         name="firstName"        
+         render={({field: {onChange, value}}) => (            
+          <View style={styles.emailInput}>
             <Input
+                value={value}
+                onChangeText={value => onChange(value)}
                 InputLeftElement={
                 <Icon
                     as={<FontAwesome5 name="id-card" />}
@@ -39,25 +61,67 @@ function Signup() {
                 />
                 }
                 variant="outline"
-                placeholder="Enter Your Name"
+                placeholder="Enter Your First Name"
                 _light={{
                 placeholderTextColor: "blueGray.400",
                 }}
                 _dark={{
                 placeholderTextColor: "blueGray.50",
                 }}
-
             />
-            </View>
+            </View>    
+         )} 
+      />
         </View>
 
+      {/* Last Name Input Field */}
+        <View style={styles.buttonStyle}>
+        <Controller        
+         control={control}        
+         name="lastName"        
+         render={({field: {onChange, value}}) => (            
+          <View style={styles.emailInput}>
+            <Input
+                value={value}
+                onChangeText={value => onChange(value)}
+                InputLeftElement={
+                <Icon
+                    as={<FontAwesome5 name="id-card" />}
+                    size="sm"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
+                }
+                variant="outline"
+                placeholder="Enter Your Last Name"
+                _light={{
+                placeholderTextColor: "blueGray.400",
+                }}
+                _dark={{
+                placeholderTextColor: "blueGray.50",
+                }}
+            />
+            </View>    
+         )} 
+      />
+        </View>
       
 
       {/* Username or Email Input Field */}
       <View style={styles.buttonStyleX}>
-        
-        <View style={styles.emailInput}>
+      <Controller        
+         control={control}        
+         name="email"        
+         render={({field: {onChange, value}}) => (            
+          <View style={styles.emailInput}>
           <Input
+            value={value}
+            onChangeText={value => onChange(value)}
             InputLeftElement={
               <Icon
                 as={<MaterialCommunityIcons name="email" />}
@@ -79,16 +143,22 @@ function Signup() {
             _dark={{
               placeholderTextColor: "blueGray.50",
             }}
-
           />
-        </View>
+        </View> 
+         )} 
+      />
       </View>
 
       {/* Password Input Field */}
       <View style={styles.buttonStyleX}>
-        
-        <View style={styles.emailInput}>
+      <Controller        
+         control={control}        
+         name="password"        
+         render={({field: {onChange, value}}) => (            
+          <View style={styles.emailInput}>
           <Input
+            value={value}
+            onChangeText={value => onChange(value)}
             InputLeftElement={
               <Icon
                 as={<FontAwesome5 name="key" />}
@@ -112,14 +182,22 @@ function Signup() {
               placeholderTextColor: "blueGray.50",
             }}
           />
-        </View>
-      </View>
+        </View> 
+         )} 
+      />
+      </View>  
+        
 
       {/* Password Input Field */}
       <View style={styles.buttonStyleX}>
-        
-        <View style={styles.emailInput}>
+      <Controller        
+         control={control}        
+         name="passwordConfirm"        
+         render={({field: {onChange, value}}) => (
+          <View style={styles.emailInput}>
           <Input
+            value={value}
+            onChangeText={value => onChange(value)}
             InputLeftElement={
               <Icon
                 as={<FontAwesome5 name="key" />}
@@ -144,13 +222,20 @@ function Signup() {
             }}
           />
         </View>
+         )} 
+      />
       </View>
 
-      {/* Vehicle Input Field */}
+      {/* Vehicle Model Input Field */}
       <View style={styles.buttonStyleX}>
-        
-        <View style={styles.emailInput}>
+      <Controller        
+         control={control}        
+         name="vehicleModel"        
+         render={({field: {onChange, value}}) => (
+          <View style={styles.emailInput}>
           <Input
+            value={value}
+            onChangeText={value => onChange(value)}
             InputLeftElement={
               <Icon
                 as={<FontAwesome5 name="car" />}
@@ -175,13 +260,20 @@ function Signup() {
             }}
           />
         </View>
+         )} 
+      />
       </View>
 
-      {/* Vehicle Input Field */}
+      {/* Vehicle Color Input Field */}
       <View style={styles.buttonStyleX}>
-        
-        <View style={styles.emailInput}>
+      <Controller        
+         control={control}        
+         name="vehicleColor"        
+         render={({field: {onChange, value}}) => (
+          <View style={styles.emailInput}>
           <Input
+            value={value}
+            onChangeText={value => onChange(value)}
             InputLeftElement={
               <Icon
                 as={<FontAwesome5 name="paint-brush" />}
@@ -206,42 +298,90 @@ function Signup() {
             }}
           />
         </View>
+         )} 
+      />
       </View>
 
-      {/* Address */}
+
+      {/* Phone Input Field */}
       <View style={styles.buttonStyleX}>
-        
+      <Controller        
+         control={control}        
+         name="phone"        
+         render={({field: {onChange, value}}) => (
+          <View style={styles.emailInput}>
+            <Input
+              value={value}
+              onChangeText={value => onChange(value)}
+              InputLeftElement={
+                <Icon
+                  as={<FontAwesome5 name="phone-alt" />}
+                  size="sm"
+                  m={2}
+                  _light={{
+                    color: "black",
+                  }}
+                  _dark={{
+                    color: "gray.300",
+                  }}
+                />
+              }
+              variant="outline"
+              secureTextEntry={false}
+              placeholder="Enter Phone Number"
+              _light={{
+                placeholderTextColor: "blueGray.400",
+              }}
+              _dark={{
+                placeholderTextColor: "blueGray.50",
+              }}
+            />
+          </View>
+         )} 
+      />
+      </View>
+
+      {/* Address Input Field */}
+      <View style={styles.buttonStyleX}>
+      <Controller        
+         control={control}        
+         name="address"        
+         render={({field: {onChange, value}}) => (
         <View style={styles.emailInput}>
-          <Input
-            InputLeftElement={
-              <Icon
-                as={<FontAwesome5 name="location-arrow" />}
-                size="sm"
-                m={2}
-                _light={{
-                  color: "black",
-                }}
-                _dark={{
-                  color: "gray.300",
-                }}
-              />
-            }
-            variant="outline"
-            secureTextEntry={false}
-            placeholder="Enter Address"
-            _light={{
-              placeholderTextColor: "blueGray.400",
-            }}
-            _dark={{
-              placeholderTextColor: "blueGray.50",
-            }}
-          />
-        </View>
+        <Input
+          value={value}
+          onChangeText={value => onChange(value)}
+          InputLeftElement={
+            <Icon
+              as={<FontAwesome5 name="location-arrow" />}
+              size="sm"
+              m={2}
+              _light={{
+                color: "black",
+              }}
+              _dark={{
+                color: "gray.300",
+              }}
+            />
+          }
+          variant="outline"
+          secureTextEntry={false}
+          placeholder="Enter Address"
+          _light={{
+            placeholderTextColor: "blueGray.400",
+          }}
+          _dark={{
+            placeholderTextColor: "blueGray.50",
+          }}
+        />
+      </View>
+         )} 
+      />
       </View>
 
       {/* Button */}
       <View style={styles.buttonStyle}>
-        <Button style={styles.buttonDesign}>
+        <Button style={styles.buttonDesign} type="submit" onPress={handleSubmit(submitSignUpForm)}>
             REGISTER NOW
         </Button>
       </View>

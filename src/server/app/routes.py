@@ -1,13 +1,15 @@
 from app import app, db, usersController, postsController, emailHandler
 from flask import request, jsonify
 import jwt
+import json
 
 
 @app.route('/sign_up', methods=['POST'])
 def sign_up():
-    email_receive = request.form['email']
+    data_received = json.loads(request.data.decode('utf8'))
+    email_receive = data_received['email']
     password_payload = {
-        'password': request.form['password']
+        'password': data_received['password']
     }
     password_receive = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
     verification_code_payload = {
@@ -15,11 +17,13 @@ def sign_up():
         'password': password_receive
     }
     verification_code = jwt.encode(verification_code_payload, app.config['SECRET_KEY'], algorithm="HS256")
-    first_name_receive = request.form['first_name']
-    last_name_receive = request.form['last_name']
-    phone_receive = request.form['phone']
-    address_receive = request.form['address']
-    sex_receive = request.form['sex']
+
+    first_name_receive = data_received['firstName']
+    last_name_receive = data_received['lastName']
+    phone_receive = data_received['phone']
+    address_receive = data_received['address']
+    vehicle_model_receive = data_received['vehicleModel']
+    vehicle_color_receive = data_received['vehicleColor']
     controller = usersController.UsersController(db)
     response = controller.create_user(
         email_receive,
@@ -28,7 +32,8 @@ def sign_up():
         last_name_receive,
         phone_receive,
         address_receive,
-        sex_receive
+        vehicle_model_receive,
+        vehicle_color_receive
     )
     emailHandler.send_verification(first_name_receive, email_receive, verification_code)
     return response
@@ -44,9 +49,10 @@ def verify_email(code):
 
 @app.route('/sign_in', methods=['POST'])
 def sign_in():
-    email_receive = request.form['email']
+    data_received = json.loads(request.data.decode('utf8'))
+    email_receive = data_received['email']
     password_payload = {
-        'password': request.form['password']
+        'password': data_received['password']
     }
     password_receive = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
     controller = usersController.UsersController(db)
@@ -63,16 +69,18 @@ def sign_in():
 
 @app.route('/update_user', methods=['POST'])
 def update_user():
-    email_receive = request.form['email']
+    data_received = json.loads(request.data.decode('utf8'))
+    email_receive = data_received['email']
     password_payload = {
-        'password': request.form['password']
+        'password': data_received['password']
     }
     password_receive = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
-    first_name_receive = request.form['first_name']
-    last_name_receive = request.form['last_name']
-    phone_receive = request.form['phone']
-    address_receive = request.form['address']
-    sex_receive = request.form['sex']
+    first_name_receive = data_received['first_name']
+    last_name_receive = data_received['last_name']
+    phone_receive = data_received['phone']
+    address_receive = data_received['address']
+    vehicle_model_receive = data_received['vehicleModel']
+    vehicle_color_receive = data_received['vehicleColor']
     controller = usersController.UsersController(db)
     response = controller.edit_user(
         email_receive,
@@ -81,7 +89,8 @@ def update_user():
         last_name_receive,
         phone_receive,
         address_receive,
-        sex_receive
+        vehicle_model_receive,
+        vehicle_color_receive
         )
     return response
 
