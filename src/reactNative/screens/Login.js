@@ -80,9 +80,11 @@ function Login() {
 
       {/* Button */}
       <View style={styles.buttonStyle}>
-        <Button style={styles.buttonDesign}>
-            LOGIN
-        </Button>
+        <TouchableOpacity style={styles.buttonDesign} onPress={() => navigation.navigate("Profile")}>
+          
+          <Text style={styles.signupText}>LOGIN</Text>
+          
+        </TouchableOpacity>
       </View>
 
       <View style={styles.text2}>
@@ -90,6 +92,10 @@ function Login() {
         <TouchableOpacity onPress={() => navigation.navigate("Signup")} ><Text style={styles.signupText}> Sign up</Text></TouchableOpacity>
       </View>
 
+      <View style={styles.text2}>
+        <Text>Have acc </Text>
+        <TouchableOpacity onPress={() => navigation.navigate("Profile")} ><Text style={styles.signupText}> Profile</Text></TouchableOpacity>
+      </View>      
       
     </View>
   );

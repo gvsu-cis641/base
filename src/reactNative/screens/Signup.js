@@ -208,6 +208,37 @@ function Signup() {
         </View>
       </View>
 
+      {/* Phone Input Field */}
+      <View style={styles.buttonStyleX}>
+        
+        <View style={styles.emailInput}>
+          <Input
+            InputLeftElement={
+              <Icon
+                as={<FontAwesome5 name="phone-alt" />}
+                size="sm"
+                m={2}
+                _light={{
+                  color: "black",
+                }}
+                _dark={{
+                  color: "gray.300",
+                }}
+              />
+            }
+            variant="outline"
+            secureTextEntry={false}
+            placeholder="Enter Phone Number"
+            _light={{
+              placeholderTextColor: "blueGray.400",
+            }}
+            _dark={{
+              placeholderTextColor: "blueGray.50",
+            }}
+          />
+        </View>
+      </View>
+
       {/* Address */}
       <View style={styles.buttonStyleX}>
         
@@ -241,8 +272,8 @@ function Signup() {
 
       {/* Button */}
       <View style={styles.buttonStyle}>
-        <Button style={styles.buttonDesign}>
-            REGISTER NOW
+        <Button style={styles.buttonDesign} >
+            <Text style={styles.signupText}>REGISTER NOW</Text>
         </Button>
       </View>
     </View>
