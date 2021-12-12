@@ -12,10 +12,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function Login() {
   const {
-    control, 
-    handleSubmit, 
-    formState: {errors, isValid}
-  } = useForm();
+      control, 
+      handleSubmit, 
+      formState: {errors, isValid}
+    } = useForm();
     const navigation = useNavigation();
     const url = 'http://3.138.37.61/sign_in';
     const submitLoginForm = async ( data ) => {
@@ -23,8 +23,6 @@ function Login() {
         const response = await axios.post( url, data );
         if ( response.data.result === 'success' ) {
           await AsyncStorage.setItem('email', response.data.email)
-          // TODO: Implement page navigation to main page
-          alert( 'login success!' );
         } else if ( response.data.result === 'user not found' ) {
           alert( 'No user is found. Please register' );
         } else if ( response.data.result === 'email unverified' ) {
@@ -39,7 +37,7 @@ function Login() {
           console.log('Error', err.message);
       }
       }
-    } 
+    };
 
   return (
     <View style={styles.container}>
@@ -81,8 +79,8 @@ function Login() {
              onChangeText={value => onChange(value)}
             />
           </View>
-        </View>      
-         )} 
+        </View>
+         )}
       />
 
       {/* Password Input Field */}
@@ -128,9 +126,10 @@ function Login() {
       <View style={styles.buttonStyle}>
         <Button style={styles.buttonDesign} 
         type="submit" 
-        onPress={
-        handleSubmit(submitLoginForm)
-        navigation.navigate("Profile")
+        onPress={async () => {
+            await handleSubmit(submitLoginForm);
+            if (AsyncStorage.getItem('email')) navigation.navigate("Profile");
+          }
         }>
             LOGIN
         </Button>
@@ -142,7 +141,7 @@ function Login() {
       </View>
 
       <View style={styles.text2}>
-        <Text>Have acc </Text>
+        <Text>Have account? </Text>
         <TouchableOpacity onPress={() => navigation.navigate("Profile")} ><Text style={styles.signupText}> Profile</Text></TouchableOpacity>
       </View>      
       
@@ -157,7 +156,7 @@ export default () => {
         <Login />
       
     </NativeBaseProvider>
-  )
+  );
 }
 
 

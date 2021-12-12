@@ -305,6 +305,10 @@ function Signup() {
 
       {/* Phone Input Field */}
       <View style={styles.buttonStyleX}>
+      <Controller        
+         control={control}        
+         name="phone"        
+         render={({field: {onChange, value}}) => (
         <View style={styles.emailInput}>
         <Input
           value={value}
@@ -343,7 +347,7 @@ function Signup() {
             <Text style={styles.signupText}>REGISTER NOW</Text>
         </Button>
       </View>
-    </View>
+      </View>
     </ScrollView>
   );
 }
