@@ -51,7 +51,7 @@ export default () => {
           <Profile />
         
       </NativeBaseProvider>
-    )
+    );
 }
 
 const styles= StyleSheet.create({
@@ -64,10 +64,10 @@ const styles= StyleSheet.create({
         marginTop:30,
         marginLeft:15
     },
-      emailInput:{
+    emailInput:{
         marginTop:10,
         marginRight:5,
-        textStyle:'bold',
+        fontWeight:'bold',
         padding:20
     },
     ListItem:{
