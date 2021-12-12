@@ -2,7 +2,7 @@ class UsersController(object):
     def __init__(self, db):
         self.table = db.Table('users')
 
-    def create_user(self, email, password, firstName, lastName, phone, address, sex):
+    def create_user(self, email, password, firstName, lastName, phone, address, vehicleModel, vehicleColor):
         response = self.table.put_item(
             Item={
                 'email': email,
@@ -12,7 +12,8 @@ class UsersController(object):
                 'lastName': lastName,
                 'phone': phone,
                 'address': address,
-                'sex': sex
+                'vehicleModel': vehicleModel,
+                'vehicleColor': vehicleColor
             })
         return response
 
@@ -32,7 +33,7 @@ class UsersController(object):
             response['ResponseMetadata']['HTTPStatusCode'] = 404
         return response
 
-    def edit_user(self, email, password, firstName, lastName, phone, address, sex):
+    def edit_user(self, email, password, firstName, lastName, phone, address, vehicleModel, vehicleColor):
         response = self.table.update_item(
             Key={
                 'email': email
@@ -58,8 +59,12 @@ class UsersController(object):
                     'Value': address,
                     'Action': 'PUT'
                 },
-                'sex': {
-                    'Value': sex,
+                'vehicleModel': {
+                    'Value': vehicleModel,
+                    'Action': 'PUT'
+                },
+                'vehicleColor': {
+                    'Value': vehicleColor,
                     'Action': 'PUT'
                 }
             },
