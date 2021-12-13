@@ -20,7 +20,7 @@ function EditProfile() {
                 InputLeftElement={
                 <Icon
                     as={<FontAwesome5 name="id-card" />}
-                    size="sm"
+                    size="md"
                     m={2}
                     _light={{
                     color: "black",
@@ -32,6 +32,78 @@ function EditProfile() {
                 }
                 variant="outline"
                 placeholder="Enter Your Phone Number"
+                _light={{
+                placeholderTextColor: "blueGray.400",
+                }}
+                _dark={{
+                placeholderTextColor: "blueGray.50",
+                }}
+
+            />
+            <Input
+                InputLeftElement={
+                <Icon
+                    as={<FontAwesome5 name="location-arrow" />}
+                    size="md"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
+                }
+                variant="outline"
+                placeholder="Enter Your Address"
+                _light={{
+                placeholderTextColor: "blueGray.400",
+                }}
+                _dark={{
+                placeholderTextColor: "blueGray.50",
+                }}
+
+            />
+            <Input
+                InputLeftElement={
+                <Icon
+                    as={<FontAwesome5 name="paint-brush" />}
+                    size="md"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
+                }
+                variant="outline"
+                placeholder="Enter Your Vechile Colour"
+                _light={{
+                placeholderTextColor: "blueGray.400",
+                }}
+                _dark={{
+                placeholderTextColor: "blueGray.50",
+                }}
+
+            />
+            <Input
+                InputLeftElement={
+                <Icon
+                    as={<FontAwesome5 name="car" />}
+                    size="md"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
+                }
+                variant="outline"
+                placeholder="Enter Your Vechile Model"
                 _light={{
                 placeholderTextColor: "blueGray.400",
                 }}
