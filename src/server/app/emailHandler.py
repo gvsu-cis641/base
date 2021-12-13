@@ -195,3 +195,12 @@ def send_verification(profile_name, recipient, code):
     mail.send(msg_send)
     Thread(target=send_async_email, args=(app, msg_send)).start()
     return jsonify({'result': 'success'})
+
+
+def send_temp_password(recipient, temp_password):
+    recipients = [recipient]
+    msg_send = Message('Temporary Password', sender=Config.MAIL_USERNAME, recipients=recipients)
+    msg_send.body = f'Your temporary password is: {temp_password}'
+    mail.send(msg_send)
+    Thread(target=send_async_email, args=(app, msg_send)).start()
+    return jsonify({'result': 'success'})
