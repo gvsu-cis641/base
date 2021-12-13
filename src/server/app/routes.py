@@ -2,6 +2,7 @@ from app import app, db, usersController, postsController, emailHandler
 from flask import request, jsonify
 import jwt
 import json
+from os import urandom
 
 
 @app.route('/sign_up', methods=['POST'])
@@ -45,6 +46,22 @@ def verify_email(code):
     controller = usersController.UsersController(db)
     response = controller.verify_user(code_payload['email'], code_payload['password'])
     return 'Email Verification Success! Please return to the app.'
+
+
+@app.route('/forgot_password', methods=['POST'])
+def forgot_password():
+    data_received = json.loads(request.data.decode('utf8'))
+    email_received = data_received['email']
+    controller = usersController.UsersController(db)
+    chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    temp_password = ''.join(chars[c % len(chars)] for c in urandom(8))
+    emailHandler.send_temp_password(email_received, temp_password)
+    password_payload = {
+        'password': temp_password
+    }
+    password_hashed = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
+    response = controller.set_temp_password(email_received, password_hashed)
+    return jsonify({'result': 'success'})
 
 
 @app.route('/sign_in', methods=['POST'])
