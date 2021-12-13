@@ -21,22 +21,77 @@ function Profile() {
         </View>
         
         <View style={styles.emailInput}>
+        <Icon
+                    as={<FontAwesome5 name="id-card" />}
+                    size="sm"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
             <Text> Profile Name </Text>
         </View>
 
         <View style={styles.emailInput}>
+            <Icon
+                    as={<FontAwesome5 name="phone" />}
+                    size="sm"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
             <Text> Phone Number </Text>
         </View>
 
         <View style={styles.emailInput}>
+        <Icon
+                    as={<FontAwesome5 name="location-arrow" />}
+                    size="sm"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
             <Text> Address </Text>
         </View>
 
         <View style={styles.emailInput}>
+        <Icon
+                    as={<FontAwesome5 name="car" />}
+                    size="sm"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
             <Text> Vehicle Model </Text>
         </View>
 
         <View style={styles.emailInput}>
+        <Icon
+                    as={<FontAwesome5 name="paint-brush" />}
+                    size="sm"
+                    m={2}
+                    _light={{
+                    color: "black",
+                    }}
+                    _dark={{
+                    color: "gray.300",
+                    }}
+                />
             <Text> Vehicle Color </Text>
         </View>
     
@@ -51,7 +106,7 @@ export default () => {
           <Profile />
         
       </NativeBaseProvider>
-    );
+    )
 }
 
 const styles= StyleSheet.create({
@@ -64,10 +119,10 @@ const styles= StyleSheet.create({
         marginTop:30,
         marginLeft:15
     },
-    emailInput:{
+      emailInput:{
         marginTop:10,
         marginRight:5,
-        fontWeight:'bold',
+        textStyle:'bold',
         padding:20
     },
     ListItem:{
