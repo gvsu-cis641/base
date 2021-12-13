@@ -4,7 +4,7 @@ class PostsController(object):
     def __init__(self, db):
         self.table = db.Table('posts')
 
-    def create_post(self, post_id, post_type, creator_email, source, destination, date, time, available_seats, total_seats):
+    def create_post(self, post_id, post_type, creator_email, source, destination, time, available_seats, total_seats):
         response = self.table.put_item(
             Item={
                 'postId': post_id,
@@ -12,7 +12,6 @@ class PostsController(object):
                 'creator_email': creator_email,
                 'source': source,
                 'destination': destination,
-                'date': date,
                 'time': time,
                 'availableSeats': available_seats,
                 'totalSeats': total_seats,
@@ -35,17 +34,16 @@ class PostsController(object):
         )
         return response['Item']
 
-    def update_post(self, post_id, source, destination, date, time, available_seats, total_seats):
+    def update_post(self, post_id, source, destination, time, available_seats, total_seats):
         response = self.table.update_item(
             Key={
                 'post_id': post_id
             },
-            UpdateExpression='SET source = :source, destination = :destination, date = :date, time = :time, '
+            UpdateExpression='SET source = :source, destination = :destination, time = :time, '
                              'available_seats = :available_seats, total_seats = :total_seats',
             ExpressionAttributeValues={
                 ':source': source,
                 ':destination': destination,
-                ':date': date,
                 ':time': time,
                 ':available_seats': available_seats,
                 ':total_seats': total_seats
