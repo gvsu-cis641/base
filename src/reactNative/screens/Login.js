@@ -136,7 +136,7 @@ function Login() {
       </View>
 
       <View style={styles.text2}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("ForgotPassword")}>
         <Text style={styles.signupText}> Forgot Password</Text></TouchableOpacity>
       </View> 
 
