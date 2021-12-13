@@ -105,3 +105,17 @@ class UsersController(object):
             }
         )
         return response
+
+    def set_temp_password(self, email, temp):
+        response = self.table.update_item(
+            Key={
+                'email': email
+            },
+            AttributeUpdates={
+                'password': {
+                    'Value': temp,
+                    'Action': 'PUT'
+                }
+            }
+        )
+        return response
