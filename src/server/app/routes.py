@@ -75,8 +75,8 @@ def update_user():
         'password': data_received['password']
     }
     password_receive = jwt.encode(password_payload, app.config['SECRET_KEY'], algorithm="HS256")
-    first_name_receive = data_received['first_name']
-    last_name_receive = data_received['last_name']
+    first_name_receive = data_received['firstName']
+    last_name_receive = data_received['lastName']
     phone_receive = data_received['phone']
     address_receive = data_received['address']
     vehicle_model_receive = data_received['vehicleModel']
@@ -105,15 +105,15 @@ def delete_user():
 
 @app.route('/post', methods=['POST'])
 def create_post():
-    post_id_receive = request.form['post_id']
-    post_type_receive = request.form['post_type']
-    creator_receive = request.form['creator']
-    source_receive = request.form['source']
-    destination_receive = request.form['destination']
-    date_receive = request.form['date']
-    time_receive = request.form['time']
-    available_seats_receive = request.form['available_seats']
-    total_seats_receive = request.form['total_seats']
+    data_received = json.loads(request.data.decode('utf8'))
+    post_id_receive = data_received['post_id']
+    post_type_receive = data_received['post_type']
+    creator_receive = data_received['creator']
+    source_receive = data_received['source']
+    destination_receive = data_received['destination']
+    time_receive = data_received['time']
+    available_seats_receive = data_received['available_seats']
+    total_seats_receive = data_received['total_seats']
     controller = postsController.PostsController(db)
     response = controller.create_post(
         post_id_receive,
@@ -121,7 +121,6 @@ def create_post():
         creator_receive,
         source_receive,
         destination_receive,
-        date_receive,
         time_receive,
         available_seats_receive,
         total_seats_receive
@@ -131,19 +130,18 @@ def create_post():
 
 @app.route('/post/update', methods=['POST'])
 def update_post():
-    id_receive = request.form['post_id']
-    source_receive = request.form['source']
-    destination_receive = request.form['destination']
-    date_receive = request.form['date']
-    time_receive = request.form['time']
-    available_seats_receive = request.form['available_seats']
-    total_seats_receive = request.form['total_seats']
+    data_received = json.loads(request.data.decode('utf8'))
+    id_receive = data_received['post_id']
+    source_receive = data_received['source']
+    destination_receive = data_received['destination']
+    time_receive = data_received['time']
+    available_seats_receive = data_received['available_seats']
+    total_seats_receive = data_received['total_seats']
     controller = postsController.PostsController(db)
     response = controller.update_post(
         id_receive,
         source_receive,
         destination_receive,
-        date_receive,
         time_receive,
         available_seats_receive,
         total_seats_receive
@@ -163,7 +161,8 @@ def load_all_posts():
 
 @app.route('/post/delete', methods=['POST'])
 def delete_post():
-    id_receive = request.form['post_id']
+    data_received = json.loads(request.data.decode('utf8'))
+    id_receive = data_received['post_id']
     controller = postsController.PostsController(db)
     response = controller.delete_post(
         id_receive
