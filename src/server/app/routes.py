@@ -168,11 +168,8 @@ def update_post():
 
 @app.route('/posts', methods=['GET'])
 def load_all_posts():
-    creator_receive = request.args.get('creator')
     controller = postsController.PostsController(db)
-    response = controller.get_all_posts(
-        creator_receive
-    )
+    response = controller.get_all_posts()
     return response
 
 

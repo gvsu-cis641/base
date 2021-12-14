@@ -1,4 +1,13 @@
-from boto3.dynamodb.conditions import Attr, Key
+import json
+import decimal
+
+
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, decimal.Decimal):
+            return str(o)
+        return super(DecimalEncoder, self).default(o)
+
 
 class PostsController(object):
     def __init__(self, db):
@@ -20,11 +29,11 @@ class PostsController(object):
         )
         return response
 
-    def get_all_posts(self, creator_email):
-        response = self.table.scan(
-                FilterExpression=Attr('passengers').contains(creator_email)
-            )
-        return response
+    def get_all_posts(self):
+        response = self.table.scan()
+        data = json.dumps(response['Items'], cls=DecimalEncoder)
+        print(data)
+        return data
 
     def get_post_by_id(self, post_id):
         response = self.table.get_item(
