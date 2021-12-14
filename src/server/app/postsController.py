@@ -1,5 +1,6 @@
 import json
 import decimal
+from botocore.exceptions import ClientError
 
 
 class DecimalEncoder(json.JSONEncoder):
@@ -18,7 +19,7 @@ class PostsController(object):
             Item={
                 'postId': post_id,
                 'postType': post_type,
-                'creator_email': creator_email,
+                'creatorEmail': creator_email,
                 'source': source,
                 'destination': destination,
                 'time': time,
@@ -32,13 +33,12 @@ class PostsController(object):
     def get_all_posts(self):
         response = self.table.scan()
         data = json.dumps(response['Items'], cls=DecimalEncoder)
-        print(data)
         return data
 
     def get_post_by_id(self, post_id):
         response = self.table.get_item(
             Key={
-                'post_id': post_id
+                'postId': post_id
             }
         )
         return response['Item']
@@ -46,16 +46,16 @@ class PostsController(object):
     def update_post(self, post_id, source, destination, time, available_seats, total_seats):
         response = self.table.update_item(
             Key={
-                'post_id': post_id
+                'postId': post_id
             },
             UpdateExpression='SET source = :source, destination = :destination, time = :time, '
-                             'available_seats = :available_seats, total_seats = :total_seats',
+                             'available_seats = :availableSeats, totalSeats = :total_seats',
             ExpressionAttributeValues={
                 ':source': source,
                 ':destination': destination,
                 ':time': time,
-                ':available_seats': available_seats,
-                ':total_seats': total_seats
+                ':availableSeats': available_seats,
+                ':totalSeats': total_seats
             },
             ReturnValues='UPDATED_NEW'
         )
@@ -64,7 +64,40 @@ class PostsController(object):
     def delete_post(self, post_id):
         response = self.table.delete_item(
             Key={
-                'post_id': post_id
+                'postId': post_id
             }
         )
         return response
+
+    def join_ride(self, post_id, email):
+        try:
+            follow_response = self.table.update_item(
+                Key={
+                    'postId': post_id
+                },
+                UpdateExpression='SET passengers = list_append(passengers, :email)',
+                ExpressionAttributeValues={
+                    ':email': [email],
+                    ':emailSingle': email
+                },
+                ConditionExpression='not(contains(passengers, :emailSingle))',
+                ReturnValues='UPDATED_NEW'
+            )
+        except ClientError as e:
+            if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
+                passengers = self.get_post_by_id(post_id)['passengers']
+                passengers.remove(email)
+                unfollow_response = self.table.update_item(
+                    Key={
+                        'postId': post_id
+                    },
+                    UpdateExpression='SET passengers = :passengers',
+                    ExpressionAttributeValues={
+                        ':passengers': passengers
+                    },
+                    ReturnValues='UPDATED_NEW'
+                )
+                return unfollow_response
+            else:
+                raise e
+        return follow_response
