@@ -8,6 +8,7 @@ import Post from './screens/Post'
 import PostCreation from './screens/PostCreation';
 import Help from './screens/Help'
 import ForgotPassword from './screens/ForgotPassword'
+import Logout from './screens/Logout'
 
 
 import { NavigationContainer } from '@react-navigation/native';

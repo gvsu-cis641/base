@@ -122,7 +122,6 @@ const styles= StyleSheet.create({
       emailInput:{
         marginTop:10,
         marginRight:5,
-        textStyle:'bold',
         padding:20
     },
     ListItem:{
