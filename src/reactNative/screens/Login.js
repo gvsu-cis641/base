@@ -128,7 +128,7 @@ function Login() {
         type="submit" 
         onPress={async () => {
             await handleSubmit(submitLoginForm);
-            if (AsyncStorage.getItem('email')) navigation.navigate("Profile");
+            if (AsyncStorage.getItem('email')) navigation.navigate("Post");
           }
         }>
             LOGIN
