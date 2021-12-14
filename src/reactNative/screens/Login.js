@@ -12,8 +12,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function Login() {
   const {
-      control, 
-      handleSubmit, 
+      control,
+      handleSubmit,
       formState: {errors, isValid}
     } = useForm();
     const navigation = useNavigation();
@@ -44,13 +44,13 @@ function Login() {
       <View style={styles.Middle}>
         <Text style={styles.LoginText}>ShareRide</Text>
       </View>
-      
+
 
       {/* Username or Email Input Field */}
-      <Controller        
-         control={control}        
-         name="email"        
-         render={({field: {onChange, value}}) => (            
+      <Controller
+         control={control}
+         name="email"
+         render={({field: {onChange, value}}) => (
           <View style={styles.buttonStyle}>
           <View style={styles.emailInput}>
             <Input
@@ -75,7 +75,7 @@ function Login() {
               _dark={{
                 placeholderTextColor: "blueGray.50",
               }}
-             value={value}    
+             value={value}
              onChangeText={value => onChange(value)}
             />
           </View>
@@ -84,10 +84,10 @@ function Login() {
       />
 
       {/* Password Input Field */}
-      <Controller        
-         control={control}        
-         name="password"        
-         render={({field: {onChange, value}}) => (            
+      <Controller
+         control={control}
+         name="password"
+         render={({field: {onChange, value}}) => (
           <View style={styles.buttonStyleX}>
         <View style={styles.emailInput}>
           <Input
@@ -113,22 +113,22 @@ function Login() {
             _dark={{
               placeholderTextColor: "blueGray.50",
             }}
-            value={value}    
+            value={value}
             onChangeText={value => onChange(value)}
           />
         </View>
-      </View>   
-         )} 
+      </View>
+         )}
       />
-      
+
 
       {/* Button */}
       <View style={styles.buttonStyle}>
-        <Button style={styles.buttonDesign} 
-        type="submit" 
+        <Button style={styles.buttonDesign}
+        type="submit"
         onPress={async () => {
             await handleSubmit(submitLoginForm);
-            if (AsyncStorage.getItem('email')) navigation.navigate("Post");
+            if (AsyncStorage.getItem('email')) navigation.navigate("Profile");
           }
         }>
             LOGIN
@@ -138,15 +138,15 @@ function Login() {
       <View style={styles.text2}>
       <TouchableOpacity onPress={() => navigation.navigate("ForgotPassword")}>
         <Text style={styles.signupText}> Forgot Password</Text></TouchableOpacity>
-      </View> 
+      </View>
 
 
       <View style={styles.text2}>
         <Text>Don't have an account? </Text>
         <TouchableOpacity onPress={() => navigation.navigate("Signup")} ><Text style={styles.signupText}>Sign up</Text></TouchableOpacity>
       </View>
-      
-      
+
+
     </View>
   );
 }
@@ -154,9 +154,9 @@ function Login() {
 export default () => {
   return (
     <NativeBaseProvider>
-     
+
         <Login />
-      
+
     </NativeBaseProvider>
   );
 }
