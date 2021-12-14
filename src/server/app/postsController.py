@@ -9,6 +9,28 @@ class DecimalEncoder(json.JSONEncoder):
             return str(o)
         return super(DecimalEncoder, self).default(o)
 
+class Comment(object):
+    def __init__(self, creator, time, content):
+        self.creator = creator
+        self.time = time
+        self.content = content
+
+    def get_creator(self):
+        return self.creator
+
+    def get_time(self):
+        return self.time
+
+    def get_content(self):
+        return self.content
+
+    def set_content(self, content):
+        self.content = content
+
+    def to_json(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=True, indent=4)
+
 
 class PostsController(object):
     def __init__(self, db):
@@ -25,7 +47,8 @@ class PostsController(object):
                 'time': time,
                 'availableSeats': available_seats,
                 'totalSeats': total_seats,
-                'passengers': [creator_email]
+                'passengers': [creator_email],
+                'comments': []
             }
         )
         return response
@@ -101,3 +124,17 @@ class PostsController(object):
             else:
                 raise e
         return follow_response
+
+    def add_comment(self, post_id, creator, time, content):
+        comment = Comment(creator, time, content)
+        response = self.table.update_item(
+            Key={
+                'postId': post_id
+            },
+            UpdateExpression='SET comments = list_append(comments, :comment)',
+            ExpressionAttributeValues={
+                ':comment': [comment.to_json()]
+            },
+            ReturnValues='UPDATED_NEW'
+        )
+        return response

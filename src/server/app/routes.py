@@ -192,3 +192,15 @@ def join_ride():
     controller = postsController.PostsController(db)
     response = controller.join_ride(id_receive, email_receive)
     return response
+
+
+@app.route('/comment', methods=['POST'])
+def comment():
+    data_received = json.loads(request.data.decode('utf8'))
+    post_id_receive = data_received['post_id']
+    creator_receive = data_received['creator']
+    time_receive = data_received['time']
+    content_receive = data_received['content']
+    controller = postsController.PostsController(db)
+    response = controller.add_comment(post_id_receive, creator_receive, time_receive, content_receive)
+    return response
