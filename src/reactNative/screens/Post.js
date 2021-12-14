@@ -4,6 +4,8 @@ import { width } from 'styled-system';
 import { useNavigation } from '@react-navigation/native';
 import { Foundation, MaterialCommunityIcons  } from '@expo/vector-icons';
 
+import axios from 'axios';
+
 
 const DATA = [
   {
@@ -35,11 +37,11 @@ const App = () => {
   );
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`https://caltrip-service.herokuapp.com/events`)
+    fetch('http://3.138.37.61/posts')
       .then((response) => response.json())
       .then((json) => setData(json))
+
       .catch((error) => console.error(error))
-      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -51,7 +53,7 @@ const App = () => {
         <View style={styles.eventBigContainer}>
         <FlatList
           data={data}
-          keyExtractor={({ id }, index) => id.toString()}
+          keyExtractor={({ postId }, index) => postId}
           renderItem={({ item }) => (
             <TouchableOpacity
               onPress={() => navigation.navigate('Create ride')}>
@@ -60,12 +62,12 @@ const App = () => {
 
                 <View style={styles.eventContainerLeft}>
                   <View style={styles.eventContainerCreatedBy}>
-                    <Text>Departure: 0000/00/00</Text>
-                    <Text>Arrival: 0000/00/00</Text>
+                    <Text>Departure: {item.source}</Text>
+                    <Text>Arrival: {item.destination}</Text>
                   </View>
 
                   <View style={styles.eventContainerTime}>
-                    <Text>Cr 00:00:00</Text>
+                    <Text>{Date(item.time)}</Text>
                   </View>
                 </View>
 
@@ -85,7 +87,7 @@ const App = () => {
                   </TouchableOpacity>
 
                   <View style={styles.eventContainerSeats}>
-                    <Text>5 / 5</Text>
+                    <Text>{item.passengers.length} / {item.totalSeats}</Text>
                   </View>
                 </View>
 
