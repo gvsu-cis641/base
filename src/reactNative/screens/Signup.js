@@ -20,7 +20,6 @@ function Signup() {
     const submitSignUpForm = async (data) => {
       try {
         const response = await axios.post( url, data );
-        console.log(response);
         alert( 'SignUp Success!' );
       } catch (err) {
         console.log(err);
@@ -308,6 +307,44 @@ function Signup() {
       <Controller        
          control={control}        
          name="phone"        
+         render={({field: {onChange, value}}) => (
+        <View style={styles.emailInput}>
+        <Input
+          value={value}
+          onChangeText={value => onChange(value)}
+          InputLeftElement={
+            <Icon
+              as={<FontAwesome5 name="phone" />}
+              size="sm"
+              m={2}
+              _light={{
+                color: "black",
+              }}
+              _dark={{
+                color: "gray.300",
+              }}
+            />
+          }
+          variant="outline"
+          secureTextEntry={false}
+          placeholder="Enter Phone Number"
+          _light={{
+            placeholderTextColor: "blueGray.400",
+          }}
+          _dark={{
+            placeholderTextColor: "blueGray.50",
+          }}
+        />
+      </View>
+         )} 
+      />
+      </View>
+
+      {/* Phone Input Field */}
+      <View style={styles.buttonStyleX}>
+      <Controller        
+         control={control}        
+         name="address"        
          render={({field: {onChange, value}}) => (
         <View style={styles.emailInput}>
         <Input

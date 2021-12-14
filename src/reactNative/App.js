@@ -31,14 +31,14 @@ function MyDrawer() {
     <Drawer.Navigator
     drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
-    
+
       <Drawer.Screen name="Login" component={Login} />
       <Drawer.Screen name="Signup" component={Signup} />
       <Drawer.Screen name="ForgotPassword" component={ForgotPassword} />
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="EditProfile" component={EditProfile} />
       <Drawer.Screen name="Post" component={Post} />
-      <Drawer.Screen name="PostCreation" component={PostCreation} />
+      <Drawer.Screen name="Create ride" component={PostCreation}/>
       <Drawer.Screen name="Help" component={Help} />
       <Drawer.Screen name="Logout" component={Logout} />
     </Drawer.Navigator>
@@ -48,9 +48,9 @@ function MyDrawer() {
 export default function App() {
   return (
     <NavigationContainer>
-     
+
         <MyDrawer />
-      
+
     </NavigationContainer>
   );
 }

@@ -30,7 +30,6 @@ const styles= StyleSheet.create({
         flex:1,
         backgroundColor: 'white',
         padding: 10,
-        alignContent:'center'
     },
     emailField:{
         marginTop:30,
