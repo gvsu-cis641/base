@@ -168,11 +168,8 @@ def update_post():
 
 @app.route('/posts', methods=['GET'])
 def load_all_posts():
-    creator_receive = request.args.get('creator')
     controller = postsController.PostsController(db)
-    response = controller.get_all_posts(
-        creator_receive
-    )
+    response = controller.get_all_posts()
     return response
 
 
@@ -184,4 +181,14 @@ def delete_post():
     response = controller.delete_post(
         id_receive
     )
+    return response
+
+
+@app.route('/join_unjoin_ride', methods=['POST'])
+def join_ride():
+    data_received = json.loads(request.data.decode('utf8'))
+    id_receive = data_received['post_id']
+    email_receive = data_received['email']
+    controller = postsController.PostsController(db)
+    response = controller.join_ride(id_receive, email_receive)
     return response
