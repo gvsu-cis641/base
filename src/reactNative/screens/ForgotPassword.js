@@ -1,48 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView,TouchableHighlight } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Input, NativeBaseProvider, Button, Icon, Box, Image, AspectRatio } from 'native-base';
 import { borderLeft, height, style, textStyle } from 'styled-system';
 import { FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
 import { useForm, Controller } from "react-hook-form";
+import axios from 'axios';
 
 function ForgotPassword() {
-    const {
-        control, 
-        handleSubmit, 
-        formState: {errors, isValid}
-      } = useForm();
+  const [email, setEmail] = useState('');
     const navigation = useNavigation();
-    const url = 'http://3.138.37.61/sign_in';
-    const submitLoginForm = async ( data ) => {
-      try{
-        const response = await axios.post( url, data );
-        if ( response.data.result === 'success' ) {
-          await AsyncStorage.setItem('email', response.data.email)
-        } else if ( response.data.result === 'user not found' ) {
-          alert( 'No user is found. Please register' );
-        } else if ( response.data.result === 'email unverified' ) {
-          alert( 'Please first verify your email.' );
-        }
-      } catch ( err ) {
-        if (err.response) {
-          console.log(err);
-      } else if (err.request) {
-          console.log(err.request);
-      } else {
-          console.log('Error', err.message);
-      }
-      }
+    const url = 'http://3.138.37.61/forgot_password';
+    const sendTempPassword = () => {
+      const param = { 'email': email}
+      axios.post(url, param)
+      .then( () => {
+        alert('Temporary Password sent to registered email address')
+      })
     };
   return(
     <View style={styles.container}>
-        
-        {/* Username or Email Input Field */}
-      <Controller        
-         control={control}        
-         name="email"        
-         render={({field: {onChange, value}}) => (            
-          <View style={styles.buttonStyle}>
+        <View style={styles.buttonStyle}>
           <View style={styles.emailInput}>
             <Input
               InputLeftElement={
@@ -66,16 +44,15 @@ function ForgotPassword() {
               _dark={{
                 placeholderTextColor: "blueGray.50",
               }}
-             value={value}    
-             onChangeText={value => onChange(value)}
+             value={email}    
+             onChangeText={value => setEmail(value)}
             />
           </View>
         </View>
-         )}
-      />
+        {/* Username or Email Input Field */}
         
         <Button style={styles.buttonDesign}>
-      <TouchableOpacity onPress={() => alert('Temporary Password sent to registered email address')}>
+      <TouchableOpacity onPress={() => sendTempPassword()}>
         <Text style={styles.signupText}> Reset Password</Text></TouchableOpacity>
       </Button> 
 

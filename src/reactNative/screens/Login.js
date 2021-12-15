@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Input, NativeBaseProvider, Button, Icon, Box, Image, AspectRatio } from 'native-base';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -11,33 +11,30 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 function Login() {
-  const {
-      control,
-      handleSubmit,
-      formState: {errors, isValid}
-    } = useForm();
-    const navigation = useNavigation();
-    const url = 'http://3.138.37.61/sign_in';
-    const submitLoginForm = async ( data ) => {
-      try{
-        const response = await axios.post( url, data );
-        if ( response.data.result === 'success' ) {
-          await AsyncStorage.setItem('email', response.data.email)
-        } else if ( response.data.result === 'user not found' ) {
-          alert( 'No user is found. Please register' );
-        } else if ( response.data.result === 'email unverified' ) {
-          alert( 'Please first verify your email.' );
-        }
-      } catch ( err ) {
-        if (err.response) {
-          console.log(err);
-      } else if (err.request) {
-          console.log(err.request);
-      } else {
-          console.log('Error', err.message);
+  const [ email, setEmail ] = useState('');
+  const [ password, setPassword ] = useState('');
+  const navigation = useNavigation();
+  const url = 'http://3.138.37.61/sign_in';
+  const logIn = () => {
+    const param = {
+      'email': email,
+      'password': password
+    }
+    axios.post(url, param)
+    .then((resp) => {
+      if ( resp.data.result === 'success' ) {
+        AsyncStorage.setItem('email', resp.data.email)
+      } else if ( resp.data.result === 'user not found' ) {
+        alert( 'No user is found. Please register' );
+      } else if ( resp.data.result === 'email unverified' ) {
+        alert( 'Please first verify your email.' );
       }
-      }
-    };
+    })
+    .then(() => {
+      navigation.navigate('Post')
+    })
+    .catch( (err) => console.log(err.message))
+  }
 
   return (
     <View style={styles.container}>
@@ -45,13 +42,7 @@ function Login() {
         <Text style={styles.LoginText}>ShareRide</Text>
       </View>
 
-
-      {/* Username or Email Input Field */}
-      <Controller
-         control={control}
-         name="email"
-         render={({field: {onChange, value}}) => (
-          <View style={styles.buttonStyle}>
+      <View style={styles.buttonStyle}>
           <View style={styles.emailInput}>
             <Input
               InputLeftElement={
@@ -75,20 +66,13 @@ function Login() {
               _dark={{
                 placeholderTextColor: "blueGray.50",
               }}
-             value={value}
-             onChangeText={value => onChange(value)}
+              onChangeText={value => setEmail(value)}
+            value={email}
             />
           </View>
         </View>
-         )}
-      />
 
-      {/* Password Input Field */}
-      <Controller
-         control={control}
-         name="password"
-         render={({field: {onChange, value}}) => (
-          <View style={styles.buttonStyleX}>
+    <View style={styles.buttonStyleX}>
         <View style={styles.emailInput}>
           <Input
             InputLeftElement={
@@ -113,25 +97,18 @@ function Login() {
             _dark={{
               placeholderTextColor: "blueGray.50",
             }}
-            value={value}
-            onChangeText={value => onChange(value)}
+            onChangeText={value => setPassword(value)}
+            value={password}
           />
         </View>
       </View>
-         )}
-      />
-
 
       {/* Button */}
       <View style={styles.buttonStyle}>
         <Button style={styles.buttonDesign}
-        type="submit"
-        onPress={async () => {
-            await handleSubmit(submitLoginForm);
-            if (AsyncStorage.getItem('email')) navigation.navigate("Profile");
-          }
-        }>
-            LOGIN
+        onPress={ () => {
+          logIn();
+        }}>LOGIN
         </Button>
       </View>
 

@@ -4,13 +4,19 @@ import { useNavigation } from '@react-navigation/native';
 import { Input, NativeBaseProvider, Button, Icon, Box, Image, AspectRatio } from 'native-base';
 import { borderLeft, height, style, textStyle } from 'styled-system';
 import { FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function Logout() {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
           <Text style={styles.signupText}>Successfully Logged Out...!!!</Text>
-          <TouchableOpacity onPress={() => navigation.navigate("Login")} ><Text style={styles.signupText}> Click here to Login </Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => {
+              AsyncStorage.setItem('email', '')
+              .then( () =>{
+                navigation.navigate("Login")
+              })
+            }} ><Text style={styles.signupText}> Click here to Login </Text></TouchableOpacity>
         </View>
     );
 };
