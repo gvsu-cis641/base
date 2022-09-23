@@ -6,7 +6,7 @@ Project description:
 
 * [Akhileswar Reddy Polireddy](https://github.com/AKHIL1399/-CIS641-HW2-POLIREDDY) ( Design user interface )
 
-* Member 2 (Role 3, Role 4)
+* [Nitish Kumar Challa](https://github.com/nitishchalla/CIS641-HW2-CHALLA/) (Backend)
 * Member 3 (Role 5, Role 6)
 
 ## Prerequisites
