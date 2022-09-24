@@ -5,7 +5,7 @@ Project description (~ This project is a online grocessary store application whi
 ## Team Members and Roles
 * Divya Pamudurthi (https://github.com/divya8317/CIS641-HW2--Pamudurthi-)
 * Mahesh Korapati ( https://github.com/Mahesh-19082000/CIS641-HW2-Korrapati )
-* Akhil Dondatea (https://github.com/Akhilsunny25/CIS-HW2-Dondate)
+* [Akhil Dondate] (https://github.com/Akhilsunny25/CIS-HW2-Dondate)
 * shruthi maggidi ()
 
 ## Prerequisites
