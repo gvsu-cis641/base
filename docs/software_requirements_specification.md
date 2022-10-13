@@ -29,3 +29,15 @@ A Software Requirements Specification (SRS) is a document that describes what an
 2. <Maintainability>
    * A database is used to maintain the database, and the application server manages the site.
    * The program's initialization will be performed.
+
+1. <Name of Feature 1>
+    1. <Functional Requirement 1>
+    2. <Functional Requirement 2>
+    3. <And so on>
+
+# Non-Functional Requirements
+
+1. <Name of Feature 1>
+    1. <Non-Functional Requirement 1>
+    2. <Non-Functional Requirement 2>
+    3. <And so on>
