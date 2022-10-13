@@ -22,13 +22,13 @@ A Software Requirements Specification (SRS) is a document that describes what an
 
 # Non-Functional Requirements
 
-1. <Security>
-    1. <The system must use secure sockets in all transactions.>
-    2. <The system must confirm all transactions with the customer's browser.>
-    3. <The system shall not leave any cookies containing the user password on the customer's computer.>
+1. Security
+    1. The system must use secure sockets in all transactions.
+    2. The system must confirm all transactions with the customer's browser.
+    3. The system shall not leave any cookies containing the user password on the customer's computer.
 
-2. <Maintainability>
-    1. <A database is used to maintain the database, and the application server manages the site.>
-    2. <The program's initialization will be performed.>
+2. Maintainability
+    1. A database is used to maintain the database, and the application server manages the site.
+    2. The program's initialization will be performed.
   
 
