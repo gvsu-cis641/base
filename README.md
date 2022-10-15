@@ -14,5 +14,9 @@ Project description:
 
 
 ## Prerequisites
+* ID card details of the business entity
+* CURRENT account with bank’s name and branch
+* NAME of the account holder
+* ACCOUNT number and Routing number
 
 ## Run Instructions
