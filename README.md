@@ -14,10 +14,10 @@ Project description (~ This project is a online grocessary store application whi
         - Knowledge on REACTJS
 
 ## Run Instructions
-Currently, we are aiming to run on local computers, which could require the following elements.
-        - PC needs the following minimal setup: Windows XP, Windows 7, or an updated version.    RAM must be at least 4 GB. Hard drive space of 10 GB is available.
-        - System with java environment
-        - Knowledge on REACTJS
+#### Currently, we are aiming to run on local computers, which could require the following elements.
+- PC needs the following minimal setup: Windows XP, Windows 7, or an updated version.    RAM must be at least 4 GB. Hard drive space of 10 GB is available.
+- System with java environment
+- Knowledge on REACTJS
 #Links
         - Antifact
         - Meetings
