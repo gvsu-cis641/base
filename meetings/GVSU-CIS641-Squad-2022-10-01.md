@@ -11,10 +11,10 @@ Time:7:00 PM
 
 Discussion points: 
 
-* Discussed about the use cases for the projects
-* About the requirements for the system
+* Discussed about the overview on the project
+* Discussed about Which software would work best 
 
 Goals for next week (include responsibilities)
 
-* To focus on the html css development part
-* To work on the login page of the project
+* To work the use case and activity diagrams 
+* To work on the html, css, javascipt concepts 
