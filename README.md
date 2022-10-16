@@ -19,8 +19,8 @@ Project description (~ This project is a online grocessary store application whi
 - System with java environment
 - Knowledge on REACTJS
 # Links
-        - Antifact
-        - Meetings
-        - Documents
-        - Test cases
+        - [Antifact](https://github.com/divya8317/base/tree/master/artifacts)
+        - [Meetings](https://github.com/divya8317/base/tree/master/meetings)
+        - [Documents](https://github.com/divya8317/base/tree/master/src)
+        - [Test cases](https://github.com/divya8317/base/tree/master/tests)
 
