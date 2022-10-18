@@ -1,2 +1,2 @@
 
-view page ( https://divya8317.github.io/web/)
+view page (https://divya8317.github.io/web/)
