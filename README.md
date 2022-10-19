@@ -1,8 +1,11 @@
 # SQUAD
 
-Project description (~ Project description (~ This project is an online grocery store application which helps consumers to get easy access to their baily basic needs. Grocery mobile applications include an admin panel that we may access right away from our computer or smartphone. And also, can control the complete inventory with the aid of the admin panel. The main goal of creating a grocery app in connection with a grocery store is to offer a customer loyalty program that will help to keep the current customers and draw in new ones. Offering a tailored and incredibly straightforward user experience is one of the most important methods to increase loyalty. Here in this project we are going to create a grocery application for grocery store which is in grand rapids that is spice of India, the main aim of this application is to provide the customers an easy and quick access to the items as spice of India store does not have an online application and most of the customers who travel so far find it difficult to grab the products from the store, through our application we can avoid extra miles on the automobiles, as well as save money on gas and parking, by opting to purchase online for delivery.)
-![image](https://user-images.githubusercontent.com/105397443/196629933-c3826d5d-71c9-45e7-a4f8-2bf0b351cca6.png)
-.)
+Project description 
+ 
+This project is an online grocery store application which helps consumers to get easy access to their daily basic needs. 
+The main goal of creating a grocery app in connection with a grocery store is to offer a customer loyalty program that will help to keep the current customers and draw in new ones. Offering a tailored and incredibly straightforward user experience is one of the most important methods to increase loyalty. 
+
+Here in this project, we are going to create a grocery application for grocery store, the main aim of this application is to provide the customers an easy and quick access to the items at the store with an online application and most of the customers who travel so far find it difficult to grab the products from the store, through our application we can avoid extra miles on the automobiles, as well as save money on gas and parking, by opting to purchase online for delivery.
 
 ## Team Members and Roles
 * [Divya Pamudurthi](https://github.com/divya8317/CIS641-HW2--Pamudurthi-) Project manager/Developer
