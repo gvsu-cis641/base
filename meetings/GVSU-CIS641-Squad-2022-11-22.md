@@ -4,9 +4,9 @@ Team name: Squad
 
 Members present: Divya, mahesh, akhil, shruthi
 
-Date: 11/15 Tuesday (zoom)
+Date: 11/22 Tuesday (zoom)
 
-Time:4:00 PM
+Time:8:00 PM
 
 Discussion points: 
 
