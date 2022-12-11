@@ -122,6 +122,36 @@ The software requirements stage involves the creation of Software Requirements 
 | FR58 | The System SHALL . |
 | FR59 | The system SHALL .  |
 
+# Change management plan
+<Description of what this section is>
 
+
+# Traceability links
+<Description of this section>
+
+
+## Use Case Diagram Traceability
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| UseCase1 | Move Player | FR5 |
+
+
+## Class Diagram Traceability
+| Artifact Name | Requirement ID |
+| :-------------: |:----------: |
+| classPlayer | NFR3, FR5 |
+
+
+## Activity Diagram Traceability
+<In this case, it makes more sense (I think, feel free to disagree) to link
+to the file and to those requirements impacted>
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| <filename> | Handle Player Input | FR1-5, NFR2 |
+
+
+# Software Artifacts
+<Describe the purpose of this section>
+* [I am a link](to_some_file.pdf)
 
 
