@@ -15,4 +15,4 @@ Discussion points:
 
 Goals for next week (include responsibilities)
 
-* We worked on backend development to get the responsivesness
+* To work on backend development to get the responsivesness
