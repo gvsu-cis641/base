@@ -72,17 +72,56 @@ The software requirements stage involves the creation of Software Requirements 
 
 ## Non Functional requirements
 
-1. Login
-* User shall be able to login with correct login details.
-* System SHALL respond quickly to multiple users. 
-* System SHALL allow user to consume less energy. 
+### Security
 
-2. Payment
-* System SHALL run without any buffer during payment method. 
-* System SHALL secure sensitive data of User like card details.
+| ID  | Requirement |
+| :-------------: | :----------: |
+| FR35| The system SHALL use email for security verification. |
+| FR36| The system SHALL only allow the admin to access permissions to the system. |
+| FR37| The System SHALL only allow the admin to update or delete the products.|
+| FR38|The system SHALL secure sensitive data of the user.  |
+| FR39 |   |
 
-3. Adding items
-* The system shall be easy to navigate interface.
-* User shall be able to add items which are currently available.
+### Performance
+
+| ID  | Requirement |
+| :-------------: | :----------: |
+| FR40| The system SHALL respond to multiple users at the same time. |
+| FR341| The wesite SHALL load as fast as possible Regardless of the volume of traffic on the website  .|
+| FR42| |
+| FR43 | |
+| FR44 |    |
+
+### Usability
+
+| ID  | Requirement |
+| :-------------: | :----------: |
+| FR45| The user SHALL easily navigate the website's interface. |
+| FR46| The user SHALL be able to utilise all the features easily.|
+| FR47| |
+| FR48 | |
+| FR49 |    |
+
+### Reliability
+
+| ID  | Requirement |
+| :-------------: | :----------: |
+| FR50| The system SHALL . |
+| FR51| The system SHALL |
+| FR52| The system SHALL .|
+| FR53 | The System SHALL  |
+| FR54 | The system SHALL .   |
+
+### Compatibility
+
+| ID  | Requirement |
+| :-------------: | :----------: |
+| FR55| The system SHALL . |
+| FR56| The system SHALL .|
+| FR57| The system SHALL .|
+| FR58 | The System SHALL . |
+| FR59 | The system SHALL .  |
+
+
 
 
