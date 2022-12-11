@@ -123,8 +123,13 @@ The software requirements stage involves the creation of Software Requirements 
 | FR59 | The system SHALL .  |
 
 # Change management plan
-<Description of what this section is>
+A change management plan is a written list of actions that a we must follow to make sure any change that we experience and has the least possible negative effects on the business, clients, staff members, and essential stakeholders. A change management plan often supervises and manages the execution. Here in our project online grocessary store's change management plan is beneficial to prepare the change by quantifying and managing expenditures connected with the transition. And also having all the necessary procedures and actions clearly specified helps to shorten the time needed for change implementation. It helps the website to function as effectively as possible while implementing change, maintaining maximum productivity
 
+• How will you train people to use it?
+
+• How will you ensure it integrates within their ecosystem / software?
+
+• How will you ensure that it any discovered issues are resolved?
 
 # Traceability links
 <Description of this section>
