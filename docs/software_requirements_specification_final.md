@@ -80,7 +80,7 @@ The software requirements stage involves the creation of Software Requirements 
 | FR36| The system SHALL only allow the admin to access permissions to the system. |
 | FR37| The System SHALL only allow the admin to update or delete the products.|
 | FR38|The system SHALL secure sensitive data of the user.  |
-| FR39 |   |
+| FR39 |The system SHALL use standard authentication methods for online payments of user.   |
 
 ### Performance
 
@@ -88,9 +88,9 @@ The software requirements stage involves the creation of Software Requirements 
 | :-------------: | :----------: |
 | FR40| The system SHALL respond to multiple users at the same time. |
 | FR341| The wesite SHALL load as fast as possible Regardless of the volume of traffic on the website  .|
-| FR42| |
-| FR43 | |
-| FR44 |    |
+| FR42|The system SHALL respond to user in less than 5 sec. |
+| FR43 |The system SHALL provide all the results for all types of user inputs. |
+| FR44 |The system SHALL be feasibility to user     |
 
 ### Usability
 
@@ -98,9 +98,9 @@ The software requirements stage involves the creation of Software Requirements 
 | :-------------: | :----------: |
 | FR45| The user SHALL easily navigate the website's interface. |
 | FR46| The user SHALL be able to utilise all the features easily.|
-| FR47| |
-| FR48 | |
-| FR49 |    |
+| FR47|The user SHALL be able to use the different options for payment |
+| FR48 | The user SHALL able to use the optional options provided to him/her. |
+| FR49 | The system SHALL help the user in using the system by guiding him.    |
 
 ### Reliability
 
@@ -116,20 +116,22 @@ The software requirements stage involves the creation of Software Requirements 
 
 | ID  | Requirement |
 | :-------------: | :----------: |
-| FR55| The system SHALL . |
-| FR56| The system SHALL .|
-| FR57| The system SHALL .|
-| FR58 | The System SHALL . |
-| FR59 | The system SHALL .  |
+| FR55| The system SHALL run independently with respect to type of machines. |
+| FR56| The system SHALL able to run at different OS environments .|
+| FR57| The system SHALL provide ability to share between different machines.|
+| FR58 | The System SHALL work effectively with different versions of the software . |
+| FR59 | The system SHALL able to enhance information exchange with different comnponents of software .  |
 
 # Change management plan
 A change management plan is a written list of actions that a we must follow to make sure any change that we experience and has the least possible negative effects on the business, clients, staff members, and essential stakeholders. A change management plan often supervises and manages the execution. Here in our project online grocessary store's change management plan is beneficial to prepare the change by quantifying and managing expenditures connected with the transition. And also having all the necessary procedures and actions clearly specified helps to shorten the time needed for change implementation. It helps the website to function as effectively as possible while implementing change, maintaining maximum productivity
 
-• How will you train people to use it?
+## How will you train people to use it?
+As it is totally new system for the client, we have planned to train the basic things initially by providing a dedicative manpower from our end once the user team is comfortable with basic usage then an ongoing training will also be arranged so that it provides real time experience. Training will be arranged for a group of people so that the user will have a back up person if they have any issues. When ever a new feature is updated then same will be trained accordingly. A process note will also be shared for reference.
+## How will you ensure it integrates within their ecosystem / software?
+The client is totally new to this as they are not using any software which is related to this. Everything in this system starts from scratch and this would take some time for the client to understand and get used to this. This might be difficult at the initial stage but later this will help the client a lot and makes the process so easy.
 
-• How will you ensure it integrates within their ecosystem / software?
-
-• How will you ensure that it any discovered issues are resolved?
+## How will you ensure that it any discovered issues are resolved?
+Whenever if any issue identified by the client the same will be immediately attended by the team and it will be rectified at the earliest possible timeline. At first it will be addressed remotely and if required a client visit will also be done to make the things faster and smoother.
 
 # Traceability links
 <Description of this section>
