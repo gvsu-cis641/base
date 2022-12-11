@@ -14,4 +14,4 @@ Discussion points:
 
 Goals for next week (include responsibilities)
 
-* We worked on the backend development options provided on of the homepage
+* To work on the backend development options provided on of the homepage
