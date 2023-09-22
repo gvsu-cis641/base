@@ -7,7 +7,9 @@ Team members: Nathan Katzman, Usman Qureshi, Zach Veenstra
 (In 2-4 paragraphs, describe your project concept)
 
 * We are creating a journaling app that is centralized around a person's mindfulness and self-motivation. The project is going to be a journaling app that integrates the users media such as pictures and video. Users can upload media from throughout their day and write about their experiences. For the user's journal entries, they can come up with ideas on their owns, or can be suggested journal prompts by the app. 
-	The journals can be uploaded to the public by the user's public or private profile if they choose to do so. Users can share these blogs onto social media accounts such as Facebook, twitter/x, instagram. There will be a homepage where people can see other user's public journal entries and can comment on the entries. There will be no likes/dislikes in order to promote real connections. We will have a profile screen and a screen that is organized through a photo album that happens to be sorted by a calendar which you can access by the specific date. 
+
+	
+* The journals can be uploaded to the public by the user's public or private profile if they choose to do so. Users can share these blogs onto social media accounts such as Facebook, twitter/x, instagram. There will be a homepage where people can see other user's public journal entries and can comment on the entries. There will be no likes/dislikes in order to promote real connections. We will have a profile screen and a screen that is organized through a photo album that happens to be sorted by a calendar which you can access by the specific date. 
 
 # Anticipated Technologies
 
