@@ -16,7 +16,10 @@ FR4: The ability to make a journal entry public or private shall be displayed wh
 Nathan: 
 
 NFR1: The journal shall have the ability to operate on a macbook or on a windows or on ios
+
 NFR2: The journal shall have the ability to peform very fast when it is being used
+
 NFR3: The journal when it is being used shall have high security to prevent it from leaking data or being hacked into
+
 NFR4: The journal shall have the ability to be reused as much times as the user makes journal entries.
 
