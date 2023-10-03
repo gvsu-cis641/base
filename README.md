@@ -11,3 +11,11 @@ Project description (~1 paragraph)
 ## Prerequisites
 
 ## Run Instructions
+
+
+## Document Link
+
+(https://github.com/ZachVeenstra/TheTuringTrio/tree/main/docs)
+# Artifacts link
+
+(https://github.com/ZachVeenstra/TheTuringTrio/tree/main/artifacts)
