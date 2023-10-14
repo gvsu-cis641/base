@@ -27,8 +27,7 @@ describe features of the system, and non-functional requirements describes attri
 # Non-functional Requirements
 
 1. Accessibility
-    1. The journal shall have the ability to operate on a macbook or on a windows or on ios.
-    2. The app must be available on the latest version of iOS (17).
+    1. The app must be available on the latest version of iOS (17).
 
 2. Performance
     1. The journal shall have the ability to peform very fast when it is being used.
