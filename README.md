@@ -1,21 +1,16 @@
 # The Turing Trio
 
-Project description (~1 paragraph)
+For our term project in Systems Design and Analysis, we were tasked with creating a team project. For our team's project, we decided to create a journal app for iOS. The main idea is that the user will upload pictures they took throughout the day, and write a journal entry about them. From there, they can save that journal and optionally post it to their public profile. If they post it publicly, other users can see the journal and can comment on it.
 
 ## Team Members and Roles
 
-* [Zach Veenstra](https://github.com/ZachVeenstra/CIS641-HW2-Veenstra) (Role 1, Role 2)
-* [Nathan Katzman](https://github.com/Katzmann835/CIS641-HW2-katzman) (Role 3, Role 4)
+* [Zach Veenstra](https://github.com/ZachVeenstra/Portfolio)
+* [Nathan Katzman](https://github.com/Katzmann835/CIS641-HW2-katzman)
 * [Usman Tahir Qureshi](https://github.com/UsmanQT/CIS641-HW2-Qureshi)
 
-## Prerequisites
-
-## Run Instructions
-
-
 ## Document Link
+[Docs](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/docs) 
 
-(https://github.com/ZachVeenstra/TheTuringTrio/tree/main/docs)
 # Artifacts link
 
-(https://github.com/ZachVeenstra/TheTuringTrio/tree/main/artifacts)
+[Artifacts](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/artifacts) 
