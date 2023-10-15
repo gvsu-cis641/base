@@ -13,6 +13,6 @@ For our term project in Systems Design and Analysis, we were tasked with creatin
 [Project Proposal](https://github.com/ZachVeenstra/TheTuringTrio/blob/main/docs/proposal-template.md)  
 [Software Requirements Specification](https://github.com/ZachVeenstra/TheTuringTrio/blob/main/docs/software_requirements_specification.md)  
 
-# Artifacts link
+## Artifacts link
 
 [Artifacts](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/artifacts) 
