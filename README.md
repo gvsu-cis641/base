@@ -8,8 +8,10 @@ For our term project in Systems Design and Analysis, we were tasked with creatin
 * [Nathan Katzman](https://github.com/Katzmann835/CIS641-HW2-katzman)
 * [Usman Tahir Qureshi](https://github.com/UsmanQT/CIS641-HW2-Qureshi)
 
-## [Document Links](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/docs) 
+## Document Links
+[All Documents](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/docs) 
 [Project Proposal](https://github.com/ZachVeenstra/TheTuringTrio/blob/main/docs/proposal-template.md)  
 [Software Requirements Specification](https://github.com/ZachVeenstra/TheTuringTrio/blob/main/docs/software_requirements_specification.md)  
 
-## [Artifacts links](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/artifacts)  
+## Artifacts links 
+[All Artifacts](https://github.com/ZachVeenstra/TheTuringTrio/tree/main/artifacts) 
