@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ImageCarousel: View {
-    var photos = ["photo", "photo", "photo"]
+    var photos: [HashableImage] = [HashableImage(), HashableImage(), HashableImage()]
     
     var body: some View {
             TabView {
                 ForEach(photos, id: \.self) { photo in
-                    Image(systemName: photo)
+                    photo.image
                         .resizable()
                         .scaledToFit()
                 }
