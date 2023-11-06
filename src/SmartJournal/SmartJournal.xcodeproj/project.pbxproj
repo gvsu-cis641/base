@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92683D912AF97DB800BEF279 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683D902AF97DB800BEF279 /* HomeView.swift */; };
+		92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683D922AF9906300BEF279 /* AuthenticationView.swift */; };
 		9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BF8B2AF964DE005EB5EB /* SmartJournalApp.swift */; };
 		9286BF902AF964E1005EB5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9286BF8F2AF964E1005EB5EB /* Assets.xcassets */; };
 		9286BF932AF964E1005EB5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9286BF922AF964E1005EB5EB /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		92683D902AF97DB800BEF279 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		92683D922AF9906300BEF279 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		9286BF882AF964DE005EB5EB /* SmartJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9286BF8B2AF964DE005EB5EB /* SmartJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJournalApp.swift; sourceTree = "<group>"; };
 		9286BF8F2AF964E1005EB5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		9286BFB92AF96594005EB5EB /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				92683D922AF9906300BEF279 /* AuthenticationView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */,
 				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
 				9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */,
+				92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
