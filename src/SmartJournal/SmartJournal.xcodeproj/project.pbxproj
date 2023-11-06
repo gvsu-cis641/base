@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92683D912AF97DB800BEF279 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683D902AF97DB800BEF279 /* HomeView.swift */; };
+		9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BF8B2AF964DE005EB5EB /* SmartJournalApp.swift */; };
+		9286BF902AF964E1005EB5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9286BF8F2AF964E1005EB5EB /* Assets.xcassets */; };
+		9286BF932AF964E1005EB5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9286BF922AF964E1005EB5EB /* Preview Assets.xcassets */; };
+		9286BF9D2AF964E2005EB5EB /* SmartJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BF9C2AF964E2005EB5EB /* SmartJournalTests.swift */; };
+		9286BFA72AF964E2005EB5EB /* SmartJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFA62AF964E2005EB5EB /* SmartJournalUITests.swift */; };
+		9286BFA92AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFA82AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift */; };
+		9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFBD2AF967D4005EB5EB /* PostView.swift */; };
+		9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFC12AF97524005EB5EB /* ImageCarousel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9286BF992AF964E2005EB5EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9286BF802AF964DE005EB5EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9286BF872AF964DE005EB5EB;
+			remoteInfo = SmartJournal;
+		};
+		9286BFA32AF964E2005EB5EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9286BF802AF964DE005EB5EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9286BF872AF964DE005EB5EB;
+			remoteInfo = SmartJournal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92683D902AF97DB800BEF279 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9286BF882AF964DE005EB5EB /* SmartJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9286BF8B2AF964DE005EB5EB /* SmartJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJournalApp.swift; sourceTree = "<group>"; };
+		9286BF8F2AF964E1005EB5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9286BF922AF964E1005EB5EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9286BF982AF964E2005EB5EB /* SmartJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9286BF9C2AF964E2005EB5EB /* SmartJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJournalTests.swift; sourceTree = "<group>"; };
+		9286BFA22AF964E2005EB5EB /* SmartJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9286BFA62AF964E2005EB5EB /* SmartJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJournalUITests.swift; sourceTree = "<group>"; };
+		9286BFA82AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9286BFBD2AF967D4005EB5EB /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9286BFC12AF97524005EB5EB /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9286BF852AF964DE005EB5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9286BF952AF964E2005EB5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9286BF9F2AF964E2005EB5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9286BF7F2AF964DE005EB5EB = {
+			isa = PBXGroup;
+			children = (
+				9286BF8A2AF964DE005EB5EB /* SmartJournal */,
+				9286BF9B2AF964E2005EB5EB /* SmartJournalTests */,
+				9286BFA52AF964E2005EB5EB /* SmartJournalUITests */,
+				9286BF892AF964DE005EB5EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9286BF892AF964DE005EB5EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9286BF882AF964DE005EB5EB /* SmartJournal.app */,
+				9286BF982AF964E2005EB5EB /* SmartJournalTests.xctest */,
+				9286BFA22AF964E2005EB5EB /* SmartJournalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9286BF8A2AF964DE005EB5EB /* SmartJournal */ = {
+			isa = PBXGroup;
+			children = (
+				9286BFBF2AF97505005EB5EB /* Components */,
+				9286BFB52AF96539005EB5EB /* Features */,
+				9286BF8B2AF964DE005EB5EB /* SmartJournalApp.swift */,
+				9286BF8F2AF964E1005EB5EB /* Assets.xcassets */,
+				9286BF912AF964E1005EB5EB /* Preview Content */,
+			);
+			path = SmartJournal;
+			sourceTree = "<group>";
+		};
+		9286BF912AF964E1005EB5EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9286BF922AF964E1005EB5EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9286BF9B2AF964E2005EB5EB /* SmartJournalTests */ = {
+			isa = PBXGroup;
+			children = (
+				9286BF9C2AF964E2005EB5EB /* SmartJournalTests.swift */,
+			);
+			path = SmartJournalTests;
+			sourceTree = "<group>";
+		};
+		9286BFA52AF964E2005EB5EB /* SmartJournalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9286BFA62AF964E2005EB5EB /* SmartJournalUITests.swift */,
+				9286BFA82AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift */,
+			);
+			path = SmartJournalUITests;
+			sourceTree = "<group>";
+		};
+		9286BFB52AF96539005EB5EB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9286BFBC2AF967C5005EB5EB /* Post */,
+				9286BFB92AF96594005EB5EB /* Authentication */,
+				9286BFB82AF9658C005EB5EB /* Profile */,
+				9286BFB72AF96581005EB5EB /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9286BFB72AF96581005EB5EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92683D902AF97DB800BEF279 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9286BFB82AF9658C005EB5EB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9286BFB92AF96594005EB5EB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9286BFBC2AF967C5005EB5EB /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				9286BFBD2AF967D4005EB5EB /* PostView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		9286BFBF2AF97505005EB5EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9286BFC02AF9750D005EB5EB /* ImageCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				9286BFC12AF97524005EB5EB /* ImageCarousel.swift */,
+			);
+			path = ImageCarousel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9286BF872AF964DE005EB5EB /* SmartJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9286BFAC2AF964E2005EB5EB /* Build configuration list for PBXNativeTarget "SmartJournal" */;
+			buildPhases = (
+				9286BF842AF964DE005EB5EB /* Sources */,
+				9286BF852AF964DE005EB5EB /* Frameworks */,
+				9286BF862AF964DE005EB5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartJournal;
+			productName = SmartJournal;
+			productReference = 9286BF882AF964DE005EB5EB /* SmartJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9286BF972AF964E2005EB5EB /* SmartJournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9286BFAF2AF964E2005EB5EB /* Build configuration list for PBXNativeTarget "SmartJournalTests" */;
+			buildPhases = (
+				9286BF942AF964E2005EB5EB /* Sources */,
+				9286BF952AF964E2005EB5EB /* Frameworks */,
+				9286BF962AF964E2005EB5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9286BF9A2AF964E2005EB5EB /* PBXTargetDependency */,
+			);
+			name = SmartJournalTests;
+			productName = SmartJournalTests;
+			productReference = 9286BF982AF964E2005EB5EB /* SmartJournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9286BFA12AF964E2005EB5EB /* SmartJournalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9286BFB22AF964E2005EB5EB /* Build configuration list for PBXNativeTarget "SmartJournalUITests" */;
+			buildPhases = (
+				9286BF9E2AF964E2005EB5EB /* Sources */,
+				9286BF9F2AF964E2005EB5EB /* Frameworks */,
+				9286BFA02AF964E2005EB5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9286BFA42AF964E2005EB5EB /* PBXTargetDependency */,
+			);
+			name = SmartJournalUITests;
+			productName = SmartJournalUITests;
+			productReference = 9286BFA22AF964E2005EB5EB /* SmartJournalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9286BF802AF964DE005EB5EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9286BF872AF964DE005EB5EB = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					9286BF972AF964E2005EB5EB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 9286BF872AF964DE005EB5EB;
+					};
+					9286BFA12AF964E2005EB5EB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 9286BF872AF964DE005EB5EB;
+					};
+				};
+			};
+			buildConfigurationList = 9286BF832AF964DE005EB5EB /* Build configuration list for PBXProject "SmartJournal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9286BF7F2AF964DE005EB5EB;
+			productRefGroup = 9286BF892AF964DE005EB5EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9286BF872AF964DE005EB5EB /* SmartJournal */,
+				9286BF972AF964E2005EB5EB /* SmartJournalTests */,
+				9286BFA12AF964E2005EB5EB /* SmartJournalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9286BF862AF964DE005EB5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9286BF932AF964E1005EB5EB /* Preview Assets.xcassets in Resources */,
+				9286BF902AF964E1005EB5EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9286BF962AF964E2005EB5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9286BFA02AF964E2005EB5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9286BF842AF964DE005EB5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */,
+				9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */,
+				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
+				9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9286BF942AF964E2005EB5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9286BF9D2AF964E2005EB5EB /* SmartJournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9286BF9E2AF964E2005EB5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9286BFA92AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift in Sources */,
+				9286BFA72AF964E2005EB5EB /* SmartJournalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9286BF9A2AF964E2005EB5EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9286BF872AF964DE005EB5EB /* SmartJournal */;
+			targetProxy = 9286BF992AF964E2005EB5EB /* PBXContainerItemProxy */;
+		};
+		9286BFA42AF964E2005EB5EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9286BF872AF964DE005EB5EB /* SmartJournal */;
+			targetProxy = 9286BFA32AF964E2005EB5EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9286BFAA2AF964E2005EB5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9286BFAB2AF964E2005EB5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9286BFAD2AF964E2005EB5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = 9HCRY829GD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZachVeenstra.SmartJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9286BFAE2AF964E2005EB5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = 9HCRY829GD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZachVeenstra.SmartJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9286BFB02AF964E2005EB5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HCRY829GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZachVeenstra.SmartJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartJournal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartJournal";
+			};
+			name = Debug;
+		};
+		9286BFB12AF964E2005EB5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HCRY829GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZachVeenstra.SmartJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartJournal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartJournal";
+			};
+			name = Release;
+		};
+		9286BFB32AF964E2005EB5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HCRY829GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZachVeenstra.SmartJournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartJournal;
+			};
+			name = Debug;
+		};
+		9286BFB42AF964E2005EB5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HCRY829GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZachVeenstra.SmartJournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartJournal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9286BF832AF964DE005EB5EB /* Build configuration list for PBXProject "SmartJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9286BFAA2AF964E2005EB5EB /* Debug */,
+				9286BFAB2AF964E2005EB5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9286BFAC2AF964E2005EB5EB /* Build configuration list for PBXNativeTarget "SmartJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9286BFAD2AF964E2005EB5EB /* Debug */,
+				9286BFAE2AF964E2005EB5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9286BFAF2AF964E2005EB5EB /* Build configuration list for PBXNativeTarget "SmartJournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9286BFB02AF964E2005EB5EB /* Debug */,
+				9286BFB12AF964E2005EB5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9286BFB22AF964E2005EB5EB /* Build configuration list for PBXNativeTarget "SmartJournalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9286BFB32AF964E2005EB5EB /* Debug */,
+				9286BFB42AF964E2005EB5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9286BF802AF964DE005EB5EB /* Project object */;
+}
