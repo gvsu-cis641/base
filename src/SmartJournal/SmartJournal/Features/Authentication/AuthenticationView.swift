@@ -61,7 +61,7 @@ struct AuthenticationView: View {
                     .brightness(-0.5))
             .foregroundStyle(Color.white)
             .multilineTextAlignment(.center)
-            .frame(width: 255, height: 96)
+            .frame(width: 355, height: 96)
     }
 }
 
