@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct AuthenticationView: View {
+    
+    @State private var username = ""
+    @State private var password = ""
+    
+    
     var body: some View {
         
         Text("Journal Log In")
@@ -16,7 +21,7 @@ struct AuthenticationView: View {
         
         Text("Enter Name: ")
             .multilineTextAlignment(.leading)
-        Text("Username: ")
+        TextField("Username:", text: $username)
             .padding()
             .background(
                 Color.gray
@@ -28,7 +33,7 @@ struct AuthenticationView: View {
              
         Text("Enter Password: ")
             .multilineTextAlignment(.leading)
-        Text("Password: ")
+        TextField("Password: ", text: $password)
             .padding()
             .background(
                 Color.gray
