@@ -11,6 +11,8 @@ struct AuthenticationView: View {
     var body: some View {
         
         Text("Journal Log In")
+            .font(.system(size:40))
+            .fontWeight(.semibold)
         
         Text("Enter Name: ")
             .multilineTextAlignment(.leading)
@@ -22,6 +24,7 @@ struct AuthenticationView: View {
             )
             .foregroundStyle(Color.black)
             .multilineTextAlignment(.leading)
+            .frame(width: 426, height: 79)
              
         Text("Enter Password: ")
             .multilineTextAlignment(.leading)
@@ -33,14 +36,18 @@ struct AuthenticationView: View {
             )
             .foregroundStyle(Color.black)
             .multilineTextAlignment(.leading)
+            .frame(width: 426, height: 79)
         
         Text("Login:")
             .multilineTextAlignment(.leading)
         Text("Login")
             .padding()
-            .background(Color(red:0.0, green:71.0, blue:171.0))
+            .background(
+                Color(red:0.0, green:71.0, blue:171.0)
+                    .brightness(-0.5))
             .foregroundStyle(Color.white)
             .multilineTextAlignment(.center)
+            .frame(width: 355, height: 129)
         
         Text("Forgot Username/password?")
         
@@ -49,9 +56,12 @@ struct AuthenticationView: View {
         
         Text("Create Account")
             .padding()
-            .background(Color(red:0.0, green:71.0, blue:171.0))
+            .background(
+                Color(red:0.0, green:71.0, blue:171.0)
+                    .brightness(-0.5))
             .foregroundStyle(Color.white)
             .multilineTextAlignment(.center)
+            .frame(width: 255, height: 96)
     }
 }
 
