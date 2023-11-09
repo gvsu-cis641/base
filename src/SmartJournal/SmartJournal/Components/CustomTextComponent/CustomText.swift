@@ -14,8 +14,8 @@ struct CustomTextView: View {
             .frame(maxWidth: .infinity)
             .padding()
             .accentColor(.black)
-            .background(Color.gray)
-            .border(Color.gray)
+            .background(Color.lightGray)
+            .border(Color.lightGray)
             .cornerRadius(10)
             .padding(.bottom)
     }

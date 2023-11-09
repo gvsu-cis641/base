@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct DarkButtonStyle: ButtonStyle {
+struct ActionButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(Color.blue)
+            .background(Color.grayishBlue)
             .foregroundColor(.white)
             .cornerRadius(10)
         

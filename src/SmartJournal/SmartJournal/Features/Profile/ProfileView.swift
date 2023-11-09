@@ -19,7 +19,7 @@ struct ProfileView: View {
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(.black)
                 userName
-                    .font(.title)
+                    .font(.largeTitle)
                 }
             Spacer()
             HStack {
@@ -34,7 +34,7 @@ struct ProfileView: View {
                     Text("Edit Profile")
                         .frame(maxWidth: .infinity)
                 }
-                .buttonStyle(DarkButtonStyle()) // Apply the custom button style
+                .buttonStyle(ActionButton()) // Apply the custom button style
                 .padding(.top)
                 .padding(.bottom)
             
