@@ -57,7 +57,7 @@
 		9286BFC12AF97524005EB5EB /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		96026F6E2AFCC03D0017A391 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		96026F712AFCC0B40017A391 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = SmartJournal/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = SmartJournal/Features/Profile/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +153,9 @@
 		9286BFB52AF96539005EB5EB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				96026F732AFCC2AA0017A391 /* Profile */,
 				9286BFBC2AF967C5005EB5EB /* Post */,
 				9286BFB92AF96594005EB5EB /* Authentication */,
-				9286BFB82AF9658C005EB5EB /* Profile */,
 				9286BFB72AF96581005EB5EB /* Home */,
 			);
 			path = Features;
@@ -167,14 +167,6 @@
 				92683D902AF97DB800BEF279 /* HomeView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		9286BFB82AF9658C005EB5EB /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		9286BFB92AF96594005EB5EB /* Authentication */ = {
@@ -226,6 +218,14 @@
 				96026F712AFCC0B40017A391 /* CustomButton.swift */,
 			);
 			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		96026F732AFCC2AA0017A391 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
