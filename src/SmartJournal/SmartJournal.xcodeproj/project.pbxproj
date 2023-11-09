@@ -18,6 +18,9 @@
 		9286BFA92AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFA82AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift */; };
 		9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFBD2AF967D4005EB5EB /* PostView.swift */; };
 		9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFC12AF97524005EB5EB /* ImageCarousel.swift */; };
+		96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F6E2AFCC03D0017A391 /* CustomText.swift */; };
+		96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F712AFCC0B40017A391 /* CustomButton.swift */; };
+		96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		9286BFA82AF964E2005EB5EB /* SmartJournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9286BFBD2AF967D4005EB5EB /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9286BFC12AF97524005EB5EB /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
+		96026F6E2AFCC03D0017A391 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		96026F712AFCC0B40017A391 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = SmartJournal/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		9286BFB82AF9658C005EB5EB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 		9286BFBF2AF97505005EB5EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				96026F702AFCC0A20017A391 /* CustomButton */,
+				96026F6D2AFCC01B0017A391 /* CustomTextComponent */,
 				92683D942AF999E100BEF279 /* HashableImage */,
 				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
 			);
@@ -201,6 +210,22 @@
 				9286BFC12AF97524005EB5EB /* ImageCarousel.swift */,
 			);
 			path = ImageCarousel;
+			sourceTree = "<group>";
+		};
+		96026F6D2AFCC01B0017A391 /* CustomTextComponent */ = {
+			isa = PBXGroup;
+			children = (
+				96026F6E2AFCC03D0017A391 /* CustomText.swift */,
+			);
+			path = CustomTextComponent;
+			sourceTree = "<group>";
+		};
+		96026F702AFCC0A20017A391 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				96026F712AFCC0B40017A391 /* CustomButton.swift */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +360,12 @@
 			files = (
 				9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */,
 				92683D962AF999F900BEF279 /* HashableImage.swift in Sources */,
+				96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */,
 				9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */,
+				96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */,
 				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
 				9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */,
+				96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */,
 				92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
