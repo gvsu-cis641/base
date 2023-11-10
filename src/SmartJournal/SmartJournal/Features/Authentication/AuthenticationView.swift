@@ -29,21 +29,14 @@ struct AuthenticationView: View {
                     }
                     
                     VStack {
-                        TextField("Username: ", text: $username)
+                        TextField("Username", text: $username)
                             .modifier(InputField())
                         
-                        SecureField("Password: ", text: $password)
+                        SecureField("Password", text: $password)
                             .modifier(InputField())
                         
                         // TODO: Create a ViewModel that holds this action
-                        Button(action: {
-                            Task {
-                                await authenticationState.login(
-                                    username: username,
-                                    password: password
-                                )
-                            }
-                        }) {
+                        Button(action: login) {
                             Text("Login")
                         }
                         .buttonStyle(ActionButton())
@@ -64,6 +57,15 @@ struct AuthenticationView: View {
                 }
             }
             .padding()
+        }
+    }
+    
+    func login () {
+        Task {
+            await authenticationState.login(
+                username: username,
+                password: password
+            )
         }
     }
 }
