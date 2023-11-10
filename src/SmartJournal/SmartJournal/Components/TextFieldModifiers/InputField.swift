@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct InputField: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(Color.lightGray)
+            .foregroundColor(.black)
+            .cornerRadius(10)
+    }
+}
