@@ -30,6 +30,7 @@ struct AuthenticationView: View {
             .foregroundStyle(Color.black)
             .multilineTextAlignment(.leading)
             .frame(width: 426, height: 79)
+            .cornerRadius(8)
              
         Text("Enter Password: ")
             .multilineTextAlignment(.leading)
@@ -42,6 +43,7 @@ struct AuthenticationView: View {
             .foregroundStyle(Color.black)
             .multilineTextAlignment(.leading)
             .frame(width: 426, height: 79)
+            .cornerRadius(8)
         
         Text("Login:")
             .multilineTextAlignment(.leading)
@@ -54,6 +56,7 @@ struct AuthenticationView: View {
                 .foregroundStyle(Color.white)
                 .multilineTextAlignment(.center)
                 .frame(width: 355, height: 129)
+                .cornerRadius(8)
         }
         
         Text("Forgot Username/password?")
@@ -70,6 +73,7 @@ struct AuthenticationView: View {
                 .foregroundStyle(Color.white)
                 .multilineTextAlignment(.center)
                 .frame(width: 355, height: 96)
+                .cornerRadius(8)
         }
     }
 }
