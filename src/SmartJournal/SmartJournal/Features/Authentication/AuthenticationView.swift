@@ -59,11 +59,13 @@ struct AuthenticationView: View {
                 .cornerRadius(8)
         }
         
-        Text("Forgot Username/password?")
-        
-        Text("Click Here")
-            .foregroundStyle(Color.blue)
-        
+        HStack{
+            Text("Forgot Username/password?")
+            
+            Text("Click Here")
+                .foregroundStyle(Color.blue)
+        }
+            
         Button(action: {}) {
             Text("Create Account")
                 .padding()
