@@ -9,73 +9,60 @@ import SwiftUI
 
 struct AuthenticationView: View {
 
+    @EnvironmentObject var authenticationState: UserAuthenticationState
     @State private var username = ""
     @State private var password = ""
     
+    private let STACK_SPACING: CGFloat = 50
  
     var body: some View {
-        
-        Text("Journal Log In")
-            .font(.system(size:40))
-            .fontWeight(.semibold)
- 
-        Text("Enter Name: ")
-            .multilineTextAlignment(.leading)
-        TextField("Username: ", text: $username)
+        NavigationStack {
+            VStack (spacing: STACK_SPACING) {
+                VStack{
+                    Text("Smart Journal")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    
+                    Image(systemName: "book")
+                        .font(.system(size:100))
+                }
+                
+                VStack {
+                    TextField("Username", text: $username)
+                        .modifier(InputField())
+                    
+                    SecureField("Password", text: $password)
+                        .modifier(InputField())
+                    
+                    Button(action: login) {
+                        Text("Login")
+                    }
+                    .buttonStyle(ActionButton())
+                }
+                
+                VStack {
+                    Text("Forgot Username/password?")
+                    Button(action: {}) {
+                        Text("Click Here")
+                            .foregroundStyle(Color.blue)
+                    }
+                    
+                    NavigationLink("Create Account") {
+                        CreateAccountView()
+                    }
+                    .buttonStyle(ActionButton())
+                }
+            }
             .padding()
-            .background(
-                Color.gray
-                    .brightness(0.4)
-            )
-            .foregroundStyle(Color.black)
-            .multilineTextAlignment(.leading)
-            .frame(width: 426, height: 79)
-            .cornerRadius(8)
-             
-        Text("Enter Password: ")
-            .multilineTextAlignment(.leading)
-        TextField("Password: ", text: $password)
-            .padding()
-            .background(
-                Color.gray
-                    .brightness(0.4)
-            )
-            .foregroundStyle(Color.black)
-            .multilineTextAlignment(.leading)
-            .frame(width: 426, height: 79)
-            .cornerRadius(8)
-        
-        Text("Login:")
-            .multilineTextAlignment(.leading)
-        Button(action: {}) {
-            Text("Login")
-                .padding()
-                .background(
-                    Color(red:0.0, green:71.0, blue:171.0)
-                        .brightness(-0.5))
-                .foregroundStyle(Color.white)
-                .multilineTextAlignment(.center)
-                .frame(width: 355, height: 129)
-                .cornerRadius(8)
         }
-        
-        HStack{
-            Text("Forgot Username/password?")
-            
-            Text("Click Here")
-                .foregroundStyle(Color.blue)
-        }
-            
-        Button(action: {}) {
-            Text("Create Account")
-                .padding()
-                .background(
-                    Color(red:0.0, green:71.0, blue:171.0)
-                        .brightness(-0.5))
-                .foregroundStyle(Color.white)
-                .multilineTextAlignment(.center)
-                .frame(width: 355, height: 96)
-                .cornerRadius(8)
+    }
+    
+    func login() {
+        Task {
+            await authenticationState.login(
+                username: username,
+                password: password
+            )
         }
     }
 }

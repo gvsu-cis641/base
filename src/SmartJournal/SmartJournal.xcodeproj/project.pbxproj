@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9224B37E2AFE9038009D8340 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B37D2AFE9038009D8340 /* InputField.swift */; };
+		9224B3832AFEA355009D8340 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B3822AFEA355009D8340 /* CreateAccountView.swift */; };
+		9224B3862AFEA977009D8340 /* UserAuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B3852AFEA977009D8340 /* UserAuthenticationState.swift */; };
 		92683D912AF97DB800BEF279 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683D902AF97DB800BEF279 /* HomeView.swift */; };
 		92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683D922AF9906300BEF279 /* AuthenticationView.swift */; };
 		92683D962AF999F900BEF279 /* HashableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683D952AF999F900BEF279 /* HashableImage.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9224B37D2AFE9038009D8340 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		9224B3822AFEA355009D8340 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		9224B3852AFEA977009D8340 /* UserAuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationState.swift; sourceTree = "<group>"; };
 		92683D902AF97DB800BEF279 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		92683D922AF9906300BEF279 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		92683D952AF999F900BEF279 /* HashableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableImage.swift; sourceTree = "<group>"; };
@@ -85,6 +91,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9224B37C2AFE9007009D8340 /* TextFieldModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9224B37D2AFE9038009D8340 /* InputField.swift */,
+			);
+			path = TextFieldModifiers;
+			sourceTree = "<group>";
+		};
+		9224B3812AFEA344009D8340 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				9224B3822AFEA355009D8340 /* CreateAccountView.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		9224B3842AFEA944009D8340 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9224B3852AFEA977009D8340 /* UserAuthenticationState.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
 		92683D942AF999E100BEF279 /* HashableImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +146,7 @@
 		9286BF8A2AF964DE005EB5EB /* SmartJournal */ = {
 			isa = PBXGroup;
 			children = (
+				9224B3842AFEA944009D8340 /* Logic */,
 				9286BFBF2AF97505005EB5EB /* Components */,
 				9286BFB52AF96539005EB5EB /* Features */,
 				9286BF8B2AF964DE005EB5EB /* SmartJournalApp.swift */,
@@ -153,6 +184,7 @@
 		9286BFB52AF96539005EB5EB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				9224B3812AFEA344009D8340 /* CreateAccount */,
 				96026F732AFCC2AA0017A391 /* Profile */,
 				9286BFBC2AF967C5005EB5EB /* Post */,
 				9286BFB92AF96594005EB5EB /* Authentication */,
@@ -188,10 +220,11 @@
 		9286BFBF2AF97505005EB5EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
+				9224B37C2AFE9007009D8340 /* TextFieldModifiers */,
 				96026F702AFCC0A20017A391 /* CustomButton */,
 				96026F6D2AFCC01B0017A391 /* CustomTextComponent */,
 				92683D942AF999E100BEF279 /* HashableImage */,
-				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -358,9 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9224B3862AFEA977009D8340 /* UserAuthenticationState.swift in Sources */,
+				9224B3832AFEA355009D8340 /* CreateAccountView.swift in Sources */,
 				9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */,
 				92683D962AF999F900BEF279 /* HashableImage.swift in Sources */,
 				96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */,
+				9224B37E2AFE9038009D8340 /* InputField.swift in Sources */,
 				9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */,
 				96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */,
 				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
