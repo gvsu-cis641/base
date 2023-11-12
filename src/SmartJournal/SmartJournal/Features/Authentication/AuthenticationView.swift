@@ -17,50 +17,47 @@ struct AuthenticationView: View {
  
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack (spacing: STACK_SPACING) {
-                    VStack{
-                        Text("Journal Log In")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                        
-                        Image(systemName: "book")
-                            .font(.system(size:100))
+            VStack (spacing: STACK_SPACING) {
+                VStack{
+                    Text("Smart Journal")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    
+                    Image(systemName: "book")
+                        .font(.system(size:100))
+                }
+                
+                VStack {
+                    TextField("Username", text: $username)
+                        .modifier(InputField())
+                    
+                    SecureField("Password", text: $password)
+                        .modifier(InputField())
+                    
+                    Button(action: login) {
+                        Text("Login")
+                    }
+                    .buttonStyle(ActionButton())
+                }
+                
+                VStack {
+                    Text("Forgot Username/password?")
+                    Button(action: {}) {
+                        Text("Click Here")
+                            .foregroundStyle(Color.blue)
                     }
                     
-                    VStack {
-                        TextField("Username", text: $username)
-                            .modifier(InputField())
-                        
-                        SecureField("Password", text: $password)
-                            .modifier(InputField())
-                        
-                        // TODO: Create a ViewModel that holds this action
-                        Button(action: login) {
-                            Text("Login")
-                        }
-                        .buttonStyle(ActionButton())
+                    NavigationLink("Create Account") {
+                        CreateAccountView()
                     }
-                    
-                    VStack {
-                        Text("Forgot Username/password?")
-                        Button(action: {}) {
-                            Text("Click Here")
-                                .foregroundStyle(Color.blue)
-                        }
-                        
-                        NavigationLink("Create Account") {
-                            CreateAccountView()
-                        }
-                        .buttonStyle(ActionButton())
-                    }
+                    .buttonStyle(ActionButton())
                 }
             }
             .padding()
         }
     }
     
-    func login () {
+    func login() {
         Task {
             await authenticationState.login(
                 username: username,
