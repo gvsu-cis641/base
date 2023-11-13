@@ -36,12 +36,8 @@ struct AuthenticationView: View {
                     
                     Button(action: login) {
                         Text("Login")
-                    }; label: do{
-                        NavigationLink("Login") {
-                            HomeView()
-                        }
-                        .buttonStyle(ActionButton())
                     }
+                    .buttonStyle(ActionButton())
                 }
                 
                 VStack {
