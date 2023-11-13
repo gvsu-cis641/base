@@ -37,6 +37,9 @@ struct AuthenticationView: View {
                     Button(action: login) {
                         Text("Login")
                     }
+                    NavigationLink("Login") {
+                        HomeView()
+                    }
                     .buttonStyle(ActionButton())
                 }
                 
