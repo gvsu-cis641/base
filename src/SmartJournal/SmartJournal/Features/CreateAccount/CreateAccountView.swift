@@ -9,7 +9,19 @@ import SwiftUI
 
 struct CreateAccountView: View {
     var body: some View {
-        Text("Create Acount")
+        VStack {
+            // TODO: Profile Picture
+            
+            // TODO: Username
+            
+            // TODO: Email
+            
+            // TODO: Password
+            
+            // TODO: Confirm Password
+            
+            // TODO: Create Account Button
+        }
     }
 }
 
