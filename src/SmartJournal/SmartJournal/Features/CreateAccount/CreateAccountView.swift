@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
+<<<<<<< HEAD
     @StateObject var authenticationState: UserAuthenticationState()
     @State private var email = ""
     @State private var username = ""
@@ -64,6 +65,11 @@ struct CreateAccountView: View {
                 .padding()
             }
         }
+=======
+    var body: some View {
+        NavigationStack {
+            
+>>>>>>> a0b2be4eb9bbdf7eb1d8157556a1135c78e53200
         }
     }
 
