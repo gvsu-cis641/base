@@ -14,7 +14,7 @@ struct CreateAccountView: View {
     @State private var username = ""
     @State private var password = ""
     @State private var con_password = ""
-
+    
     private let STACK_SPACING: CGFloat = 50
     
     var body: some View {
