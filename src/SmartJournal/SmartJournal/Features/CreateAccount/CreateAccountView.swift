@@ -9,13 +9,13 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
-<<<<<<< HEAD
+    
     @EnvironmentObject var authenticationState: UserAuthenticationState
     @State private var email = ""
     @State private var username = ""
     @State private var password = ""
     @State private var con_password = ""
-
+    
     private let STACK_SPACING: CGFloat = 50
     
     var body: some View {
@@ -75,11 +75,13 @@ struct CreateAccountView: View {
                     confirm_password: con_password
                 )
             }
-=======
-    var body: some View {
-        VStack {
             
->>>>>>> cbfa559bbb48fcc8ff00d337c5c1839a83dc3888
+            var body: some View {
+                VStack {
+                    
+                    
+                }
+            }
         }
     }
 }
