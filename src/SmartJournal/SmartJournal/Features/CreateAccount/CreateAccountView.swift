@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
-<<<<<<< HEAD
     @EnvironmentObject var authenticationState: UserAuthenticationState
     @State private var email = ""
     @State private var username = ""
@@ -75,11 +74,6 @@ struct CreateAccountView: View {
                     confirm_password: con_password
                 )
             }
-=======
-    var body: some View {
-        VStack {
-            
->>>>>>> cbfa559bbb48fcc8ff00d337c5c1839a83dc3888
         }
     }
 }
