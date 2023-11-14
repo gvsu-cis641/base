@@ -9,12 +9,12 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
-    @EnvironmentObject var authenticationState: UserAuthenticationState
+    @EnvironmentObject var CreateState: UserCreateState
     @State private var email = ""
     @State private var username = ""
-    @State private var password = ""
-    @State private var con_password = ""
-
+    @state private var password = ""
+    @state private var con_password = ""
+    
     private let STACK_SPACING: CGFloat = 50
     
     var body: some View {
@@ -29,7 +29,7 @@ struct CreateAccountView: View {
                         .font(.system(size:100))
                 }
                 
-                VStack {
+                Vstack {
                     TextField("Email", text: $email)
                         .modifier(InputField())
                     
@@ -67,16 +67,15 @@ struct CreateAccountView: View {
         
         func login() {
             Task {
-                await authenticationState.create_login(
+                await CreateState.login(
                     email: email,
-                    username: username,
-                    password: password,
+                    username: username
+                    password: password
                     confirm_password: con_password
                 )
             }
         }
     }
-}
 
 #Preview {
     CreateAccountView()
