@@ -9,7 +9,7 @@ import SwiftUI
 import PhotosUI
 
 struct EditJournalView: View {
-    @StateObject private var viewModel = PhotoPickerViewModel()
+    @StateObject private var viewModel = MultiplePhotoPickerViewModel()
     @State private var text = String()
     
     var body: some View {

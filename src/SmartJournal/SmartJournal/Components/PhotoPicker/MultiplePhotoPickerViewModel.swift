@@ -10,7 +10,7 @@ import SwiftUI
 import PhotosUI
 
 @MainActor
-final class PhotoPickerViewModel: ObservableObject {
+final class MultiplePhotoPickerViewModel: ObservableObject {
     @Published private(set) var photos: [HashableImage] = []
     @Published var imageSelections: [PhotosPickerItem] = [] {
         didSet {
