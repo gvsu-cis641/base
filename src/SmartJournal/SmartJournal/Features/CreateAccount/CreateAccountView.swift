@@ -30,16 +30,16 @@ struct CreateAccountView: View {
                 
                 VStack {
                     TextField("Email", text: $email)
-                        .modifier(InputField())
+                        .InputField(ViewModifier())
                     
                     TextField("Username", text: $username)
-                        .modifier(InputField())
+                        .InputField(ViewModifier())
                     
                     SecureField("Password", text: $password)
-                        .modifier(InputField())
+                        .InputField(ViewModifier())
                     
                     SecureField("Confirm Password", text: $con_password)
-                        .modifier(InputField())
+                        .InputField(ViewModifier())
                     
                     Button(action: login) {
                         Text("Login")
