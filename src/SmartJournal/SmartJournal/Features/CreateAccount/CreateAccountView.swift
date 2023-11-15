@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
-    @EnvironmentObject var authenticationState: UserAuthenticationState
     @State private var email = ""
     @State private var username = ""
     @State private var password = ""
@@ -36,43 +35,34 @@ struct CreateAccountView: View {
                     TextField("Username", text: $username)
                         .modifier(InputField())
                     
-                    TextField("Password", text: $password)
+                    SecureField("Password", text: $password)
                         .modifier(InputField())
                     
-                    TextField("Confirm Password", text: $con_password)
+                    SecureField("Confirm Password", text: $con_password)
                         .modifier(InputField())
                     
                     Button(action: login) {
                         Text("Login")
                     }
-                    .buttonStyle(ActionButton())
+                    .ActionButton(ButtonStyle())
                 }
                 
                 VStack {
                     HStack{
                         Text("Click ")
                         
-                        Button(action: AuthenticationView()) {
-                            Text("Here")
+                        NavigationLink("Here") {
+                            .AuthenticationView(View)
                                 .foregroundStyle(Color.blue)
                         }
+                        
+                        
+                        
                         Text(" to return to the login page")
-                            .buttonStyle(ActionButton())
                         
                     }
                 }
                 .padding()
-            }
-        }
-        
-        func login() {
-            Task {
-                await authenticationState.create_login(
-                    email: email,
-                    username: username,
-                    password: password,
-                    confirm_password: con_password
-                )
             }
         }
     }
