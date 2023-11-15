@@ -23,6 +23,7 @@
 		9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286BFC12AF97524005EB5EB /* ImageCarousel.swift */; };
 		96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F6E2AFCC03D0017A391 /* CustomText.swift */; };
 		96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F712AFCC0B40017A391 /* CustomButton.swift */; };
+		9610676D2B0487C700B0714D /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676C2B0487C700B0714D /* EditProfile.swift */; };
 		96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		9286BFC12AF97524005EB5EB /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		96026F6E2AFCC03D0017A391 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		96026F712AFCC0B40017A391 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9610676C2B0487C700B0714D /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = SmartJournal/Features/Profile/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -257,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */,
+				9610676C2B0487C700B0714D /* EditProfile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */,
 				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
 				9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */,
+				9610676D2B0487C700B0714D /* EditProfile.swift in Sources */,
 				96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */,
 				92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */,
 			);
