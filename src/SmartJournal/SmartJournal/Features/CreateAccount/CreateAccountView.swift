@@ -54,8 +54,6 @@ struct CreateAccountView: View {
                                 .foregroundStyle(Color.blue)
                         }
                         
-                        
-                        
                         Text(" to return to the login page")
                         
                     }
