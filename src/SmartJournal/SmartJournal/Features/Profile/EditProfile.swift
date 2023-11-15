@@ -12,20 +12,23 @@ struct EditProfile: View {
     var offset: CGFloat {
         sqrt(radius * radius / 2)
     }
-    @State private var userName = ""
+    @State private var username: String
+    @State private var email: String
+    @State private var bio: String
+    
     @State private var password = ""
-    @State private var bio = ""
-    @State private var email = ""
+    
+    init(username: String, email: String, bio: String) {
+            _username = State(initialValue: username)
+            _email = State(initialValue: email)
+            _bio = State(initialValue: bio)
+        }
+    
     private let image = HashableImage(image: Image(systemName: "photo"))
     
     var body: some View {
         VStack(alignment: .leading,  content:{
-            HStack {
-                Image(systemName: "chevron.left")
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.black) 
-                }
-            Spacer()
+            
             HStack(content: {
                 Spacer()
                 HStack {
@@ -56,7 +59,7 @@ struct EditProfile: View {
             TextField("Email", text: $email)
                 .modifier(InputField())
                 .padding( .top)
-            TextField("Username", text: $userName)
+            TextField("Username", text: $username)
                 .modifier(InputField())
                 .padding( .top)
             SecureField("Password", text: $password)
@@ -79,5 +82,5 @@ struct EditProfile: View {
 }
 
 #Preview {
-    EditProfile()
+    EditProfile(username: "John", email: "john@gmail.com", bio: "This is fun")
 }

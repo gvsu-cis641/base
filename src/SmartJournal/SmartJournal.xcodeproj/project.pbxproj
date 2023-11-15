@@ -24,6 +24,7 @@
 		96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F6E2AFCC03D0017A391 /* CustomText.swift */; };
 		96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F712AFCC0B40017A391 /* CustomButton.swift */; };
 		9610676D2B0487C700B0714D /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676C2B0487C700B0714D /* EditProfile.swift */; };
+		961067702B054DFD00B0714D /* LeftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676F2B054DFD00B0714D /* LeftIconButton.swift */; };
 		96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		96026F6E2AFCC03D0017A391 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		96026F712AFCC0B40017A391 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9610676C2B0487C700B0714D /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		9610676F2B054DFD00B0714D /* LeftIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftIconButton.swift; sourceTree = "<group>"; };
 		96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = SmartJournal/Features/Profile/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -222,6 +224,7 @@
 		9286BFBF2AF97505005EB5EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9610676E2B054DDC00B0714D /* LeftIconButton */,
 				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
 				9224B37C2AFE9007009D8340 /* TextFieldModifiers */,
 				96026F702AFCC0A20017A391 /* CustomButton */,
@@ -262,6 +265,14 @@
 				9610676C2B0487C700B0714D /* EditProfile.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		9610676E2B054DDC00B0714D /* LeftIconButton */ = {
+			isa = PBXGroup;
+			children = (
+				9610676F2B054DFD00B0714D /* LeftIconButton.swift */,
+			);
+			path = LeftIconButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +418,7 @@
 				9610676D2B0487C700B0714D /* EditProfile.swift in Sources */,
 				96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */,
 				92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */,
+				961067702B054DFD00B0714D /* LeftIconButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
