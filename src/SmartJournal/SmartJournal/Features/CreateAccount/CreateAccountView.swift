@@ -24,9 +24,6 @@ struct CreateAccountView: View {
                     Text("Create Account")
                         .font(.title)
                         .fontWeight(.semibold)
-                    
-                    Image(systemName: "book")
-                        .font(.system(size:100))
                 }
                 
                 VStack {
@@ -42,10 +39,10 @@ struct CreateAccountView: View {
                     SecureField("Confirm Password", text: $con_password)
                         .modifier(InputField())
                     
-                    Button(action: login) {
+                    Button(action: {}) {
                         Text("Login")
                     }
-                    .buttonStyle(ActionButton())
+                    .ActionButton(ButtonStyle())
                 }
                 
                 VStack {
