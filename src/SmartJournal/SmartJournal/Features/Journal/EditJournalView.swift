@@ -6,17 +6,24 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct EditJournalView: View {
+    @StateObject private var viewModel = PhotoPickerViewModel()
     @State private var text = String()
     
     var body: some View {
         NavigationStack() {
             VStack {
                 VStack {
-                    ImageCarousel()
                     
-                    Button(action: uploadPhotos) {
+                    if viewModel.photos == [] {
+                        ImageCarousel(photos: [HashableImage()])
+                    } else {
+                        ImageCarousel(photos: viewModel.photos)
+                    }
+                    
+                    PhotosPicker(selection: $viewModel.imageSelections, matching: .images) {
                         Text("Upload Photos")
                     }
                     .buttonStyle(ActionButton())
@@ -39,10 +46,6 @@ struct EditJournalView: View {
             .padding()
         }
     }
-}
-
-func uploadPhotos() {
-    
 }
         
 func navigateToAttributes() {
