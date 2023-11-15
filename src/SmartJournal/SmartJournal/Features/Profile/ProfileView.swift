@@ -16,7 +16,7 @@ struct ProfileView: View {
     
     private let image = HashableImage(image: Image(systemName: "photo"))
     var body: some View {
-        NavigationView{
+        NavigationStack {
             
             VStack(alignment: .leading, content: {
                 
@@ -36,25 +36,22 @@ struct ProfileView: View {
                 .padding(.top)
                 .padding(.bottom)
                 
-                //Need to add label texts on the top left corner of the texts elements
-                CustomTextView(text: bio)
-                CustomTextView(text: email)
-                CustomTextView(text: userName)
+                CustomTextView(text: bio, labelText: "Bio")
+                CustomTextView(text: email, labelText: "Email")
+                CustomTextView(text: userName, labelText: "Username")
                 
                 Spacer()
                 
                 
             })
             .navigationTitle(userName)
-            .navigationBarBackButtonHidden(false)
+            .navigationBarBackButtonHidden(true)
             
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(30)
         }
-    }
-    
-    func edit_profile() {
-       
+        
+        
     }
 }
 

@@ -27,56 +27,61 @@ struct EditProfile: View {
     private let image = HashableImage(image: Image(systemName: "photo"))
     
     var body: some View {
-        VStack(alignment: .leading,  content:{
-            
-            HStack(content: {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Image(systemName: "person.circle.fill")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .overlay(
-                                    Button(action: {}) {
-                                        Image(systemName: "camera.fill")
-                                            .foregroundColor(.primary)
-                                            .padding(8)
-                                            .background(Color.white)
-                                            .clipShape(Circle())
-                                            .background(
-                                                Circle()
-                                                    .stroke(Color.gray, lineWidth: 2)
-                                            )
-                                    }.offset(x: offset, y: offset)
-                                )
-                    Spacer()}
-                Spacer()
+        NavigationStack {
+            VStack(alignment: .leading,  content:{
                 
-            })
-            TextField("Bio", text: $bio)
-                .modifier(InputField())
-                .padding( .top)
-            TextField("Email", text: $email)
-                .modifier(InputField())
-                .padding( .top)
-            TextField("Username", text: $username)
-                .modifier(InputField())
-                .padding( .top)
-            SecureField("Password", text: $password)
-                .modifier(InputField())
-                .padding( .top)
-            Button {
-                } label: {
-                    Text("Save")
-                        .frame(maxWidth: .infinity)
-                }
+                HStack(content: {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Image(systemName: "person.circle.fill")
+                            .resizable()
+                            .frame(width: 200, height: 200)
+                            .overlay(
+                                Button(action: {}) {
+                                    Image(systemName: "camera.fill")
+                                        .foregroundColor(.primary)
+                                        .padding(8)
+                                        .background(Color.white)
+                                        .clipShape(Circle())
+                                        .background(
+                                            Circle()
+                                                .stroke(Color.gray, lineWidth: 2)
+                                        )
+                                }.offset(x: offset, y: offset)
+                            )
+                        Spacer()}
+                    Spacer()
+                    
+                })
+                
+                LabelsForTextFields(labelText: "Bio")
+                
+                TextField("Enter your bio", text: $bio)
+                    .modifier(InputField())
+                
+                LabelsForTextFields(labelText: "Email")
+                TextField("Email", text: $email)
+                    .modifier(InputField())
+                
+                LabelsForTextFields(labelText: "Username")
+                TextField("Username", text: $username)
+                    .modifier(InputField())
+                
+                LabelsForTextFields(labelText: "Password")
+                SecureField("Password", text: $password)
+                    .modifier(InputField())
+                
+                NavigationLink("Save", destination: ProfileView())
                 .buttonStyle(ActionButton()) // Apply the custom button style
                 .padding(.top)
                 .padding(.bottom)
-        })
-        .frame(maxWidth: .infinity, alignment: .leading)
-        
-        .padding(30)
+            })
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            .padding(30)
+            
+        }
         
     }
 }
