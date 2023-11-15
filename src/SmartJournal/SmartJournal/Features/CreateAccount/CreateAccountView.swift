@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct CreateAccountView: View {
     
@@ -30,21 +31,21 @@ struct CreateAccountView: View {
                 
                 VStack {
                     TextField("Email", text: $email)
-                        .InputField(ViewModifier())
+                        .modifier(InputField())
                     
                     TextField("Username", text: $username)
-                        .InputField(ViewModifier())
+                        .modifier(InputField())
                     
                     SecureField("Password", text: $password)
-                        .InputField(ViewModifier())
+                        .modifier(InputField())
                     
                     SecureField("Confirm Password", text: $con_password)
-                        .InputField(ViewModifier())
+                        .modifier(InputField())
                     
                     Button(action: login) {
                         Text("Login")
                     }
-                    .ActionButton(ButtonStyle())
+                    .buttonStyle(ActionButton())
                 }
                 
                 VStack {
