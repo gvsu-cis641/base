@@ -12,6 +12,7 @@ struct CustomTextView: View {
     var labelText: String
     
     var body: some View {
+<<<<<<< HEAD
         VStack(alignment: .leading) {
             Text(labelText)
                 .font(.caption)
@@ -31,6 +32,16 @@ struct CustomTextView: View {
             }
         }
         .padding(.bottom)
+=======
+        Text(text)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .accentColor(.black)
+            .background(Color.textField)
+            .border(Color.textField)
+            .cornerRadius(10)
+            .padding(.bottom)
+>>>>>>> 90b7f19e98ce4b5b7c77d26fb2d057f3ea301a53
     }
 }
 

@@ -12,7 +12,7 @@ struct ActionButton: ButtonStyle {
         configuration.label
             .frame(maxWidth: .infinity)
             .padding()
-            .background(Color.grayishBlue)
+            .background(Color.actionButton)
             .foregroundColor(.white)
             .cornerRadius(10)
         
