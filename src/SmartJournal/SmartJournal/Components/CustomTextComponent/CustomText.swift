@@ -21,7 +21,8 @@ struct CustomTextView: View {
 
             ZStack(alignment: .topLeading) {
                 Text(text)
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                   
                     .padding()
                     .accentColor(.black)
                     .background(Color.lightGray)

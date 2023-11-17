@@ -37,6 +37,7 @@ struct ProfileView: View {
                 .padding(.bottom)
                 
                 CustomTextView(text: bio, labelText: "Bio")
+                    
                 CustomTextView(text: email, labelText: "Email")
                 CustomTextView(text: userName, labelText: "Username")
                 
