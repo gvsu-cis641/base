@@ -10,7 +10,6 @@ import SwiftUI
 struct ActionButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(maxWidth: .infinity)
             .padding()
             .background(Color.actionButton)
             .foregroundColor(.white)
