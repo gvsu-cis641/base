@@ -233,11 +233,8 @@
 		9286BFBF2AF97505005EB5EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				9610676E2B054DDC00B0714D /* LeftIconButton */,
-=======
 				92D6F9942B05642500C7CE0E /* PhotoPicker */,
->>>>>>> 90b7f19e98ce4b5b7c77d26fb2d057f3ea301a53
 				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
 				9224B37C2AFE9007009D8340 /* TextFieldModifiers */,
 				96026F702AFCC0A20017A391 /* CustomButton */,
@@ -449,11 +446,8 @@
 				961067722B055C2000B0714D /* LabelsForTextFields.swift in Sources */,
 				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
 				9286BF8C2AF964DE005EB5EB /* SmartJournalApp.swift in Sources */,
-<<<<<<< HEAD
 				9610676D2B0487C700B0714D /* EditProfile.swift in Sources */,
-=======
 				92D6F9982B0587E900C7CE0E /* SinglePhotoPickerViewModel.swift in Sources */,
->>>>>>> 90b7f19e98ce4b5b7c77d26fb2d057f3ea301a53
 				96F1ADFC2AFAAAAD00968C14 /* ProfileView.swift in Sources */,
 				92683D932AF9906300BEF279 /* AuthenticationView.swift in Sources */,
 				961067702B054DFD00B0714D /* LeftIconButton.swift in Sources */,
