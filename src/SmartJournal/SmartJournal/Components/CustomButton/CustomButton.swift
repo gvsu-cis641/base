@@ -11,7 +11,7 @@ struct ActionButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(Color.grayishBlue)
+            .background(Color.actionButton)
             .foregroundColor(.white)
             .cornerRadius(10)
         
