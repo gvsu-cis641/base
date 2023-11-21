@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import PhotosUI
 struct EditProfile: View {
     let radius: CGFloat = 100
     var offset: CGFloat {
@@ -17,6 +17,8 @@ struct EditProfile: View {
     @State private var bio: String
     
     @State private var password = ""
+    
+    @StateObject private var viewModel = SinglePhotoPickerViewModel()
     
     init(username: String, email: String, bio: String) {
             _username = State(initialValue: username)
@@ -38,7 +40,7 @@ struct EditProfile: View {
                             .resizable()
                             .frame(width: 200, height: 200)
                             .overlay(
-                                Button(action: {}) {
+                                PhotosPicker(selection: $viewModel.imageSelection, matching: .images) {
                                     Image(systemName: "camera.fill")
                                         .foregroundColor(.primary)
                                         .padding(8)
