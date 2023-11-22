@@ -11,6 +11,7 @@ import PhotosUI
 
 @MainActor
 final class SinglePhotoPickerViewModel: ObservableObject {
+    
     @Published private(set) var photo: HashableImage? = nil
     @Published var imageSelection: PhotosPickerItem? = nil {
         didSet {
