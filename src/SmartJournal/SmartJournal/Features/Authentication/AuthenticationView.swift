@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct AuthenticationView: View {
 
+    var user: User?
+    
     @EnvironmentObject var authenticationState: UserAuthenticationState
     @State private var username = ""
     @State private var password = ""
@@ -34,8 +37,8 @@ struct AuthenticationView: View {
                     SecureField("Password", text: $password)
                         .modifier(InputField())
                     
-                    Button(action: login) {
-                        Text("Login")
+                    Button("Login") {
+                        login(email: username, password: password)
                     }
                     .buttonStyle(ActionButton())
                 }
@@ -57,13 +60,19 @@ struct AuthenticationView: View {
         }
     }
     
-    func login() {
-        Task {
-            await authenticationState.login(
-                username: username,
-                password: password
-            )
-        }
+    func login(email: String, password: String) {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if error != nil {
+                    print(error?.localizedDescription ?? "")
+                } else {
+                    print("success")
+                }
+            }
+//            await authenticationState.login(
+//                username: username,
+//                password: password
+//            )
+
     }
 }
 

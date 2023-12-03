@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct HomeView: View {
     private let posts = [PostView(), PostView()]
     var body: some View {

@@ -8,9 +8,22 @@
 /** Learned how to use EnvironmentObjects to control authentication state here: https://paulallies.medium.com/login-logout-flow-swiftui-and-environmentobject-48ea084c5b6e */
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 
 @main
 struct SmartJournalApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     @StateObject var authenticationState = UserAuthenticationState()
     
