@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import PhotosUI
 struct EditProfile: View {
     let radius: CGFloat = 100
     var offset: CGFloat {
@@ -17,6 +17,8 @@ struct EditProfile: View {
     @State private var bio: String
     
     @State private var password = ""
+    
+    @StateObject private var viewModel = SinglePhotoPickerViewModel()
     
     init(username: String, email: String, bio: String) {
             _username = State(initialValue: username)
@@ -34,11 +36,14 @@ struct EditProfile: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        Image(systemName: "person.circle.fill")
+                        //Need to create a custom component for profile pic
+                        if (viewModel.photo == nil) {
+                            Image( systemName: "person.circle.fill")
+                            
                             .resizable()
                             .frame(width: 200, height: 200)
                             .overlay(
-                                Button(action: {}) {
+                                PhotosPicker(selection: $viewModel.imageSelection, matching: .images) {
                                     Image(systemName: "camera.fill")
                                         .foregroundColor(.primary)
                                         .padding(8)
@@ -50,7 +55,32 @@ struct EditProfile: View {
                                         )
                                 }.offset(x: offset, y: offset)
                             )
+                        }
+                        
+                        else {
+                            //Need to update state of the profile pic so it changes on the profile screen as well
+                            viewModel.photo?.image
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                                .clipShape(Circle())
+                                .overlay(
+                                    PhotosPicker(selection: $viewModel.imageSelection, matching: .images) {
+                                        Image(systemName: "camera.fill")
+                                            .foregroundColor(.primary)
+                                            .padding(8)
+                                            .background(Color.white)
+                                            .clipShape(Circle())
+                                            .background(
+                                                Circle()
+                                                    .stroke(Color.gray, lineWidth: 2)
+                                            )
+                                    }.offset(x: offset, y: offset)
+                                )
+                        }
+                        
+                    
                         Spacer()}
+                
                     Spacer()
                     
                 })
