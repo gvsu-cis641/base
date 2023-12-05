@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 enum AuthenticationError: Error {
     case loginError, logoutError
@@ -13,26 +14,35 @@ enum AuthenticationError: Error {
 
 @MainActor
 class UserAuthenticationState: ObservableObject {
-    @Published var isLoggedIn = false
     @Published var isBusy = false
+    
+    @Published var isSignedIn: Bool = false
+    @Published var user: User? = nil
+        
+        init() {
+            
+            //FirebaseApp.configure()
+        
+            // Add an authentication state listener
+            Auth.auth().addStateDidChangeListener { (_, user) in
+                self.isSignedIn = (user != nil)
+                self.user = user
+            }
+        }
     
     func login(username: String, password: String) async -> Result<Bool, AuthenticationError> {
         isBusy = true
-        
-        do {
+            
             // TODO: Authenticate with backend
-            try await Task.sleep(nanoseconds:  1_000_000_000)
-            isLoggedIn = true
-            isBusy = false
-            
-            return .success(true)
-        } 
+            if self.user != nil {
+                self.isSignedIn = true
+                isBusy = false
+                return .success(true)
+            } else {
+                isBusy = false
+                return .failure(.loginError)
+            }
         
-        catch {
-            isBusy = false
-            
-            return .failure(.loginError)
-        }
     }
     
     func logout() async -> Result<Bool, AuthenticationError> {
@@ -41,7 +51,7 @@ class UserAuthenticationState: ObservableObject {
         
         do {
             try await Task.sleep(nanoseconds: 1_000_000_000)
-            isLoggedIn = false
+            self.isSignedIn = false
             isBusy = false
             
             return .success(true)

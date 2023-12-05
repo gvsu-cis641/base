@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import FirebaseAuth
 
 struct AuthenticationView: View {
 
@@ -61,21 +62,31 @@ struct AuthenticationView: View {
     }
     
     func login(email: String, password: String) {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if error != nil {
-                    print(error?.localizedDescription ?? "")
-                } else {
-                    print("success")
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                print("Error signing in:", error.localizedDescription)
+            } else if let user = authResult?.user {
+                // Sign-in successful
+                print("Success")
+                
+                // Set the display name
+//                let changeRequest = user.createProfileChangeRequest()
+//                changeRequest.displayName = "Turing_Trio"
+//                
+//                // Commit the changes
+//                changeRequest.commitChanges { error in
+//                    if let error = error {
+//                        print("Error updating profile:", error.localizedDescription)
+//                    } else {
+//                        print("Profile updated successfully")
+//                    }
                 }
             }
-//            await authenticationState.login(
-//                username: username,
-//                password: password
-//            )
+        }
 
-    }
 }
 
 #Preview {
     AuthenticationView()
 }
+

@@ -10,12 +10,14 @@
 import SwiftUI
 import FirebaseCore
 import FirebaseAuth
+import FirebaseFirestore
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
+    //let db = Firestore.firestore()
 
     return true
   }
@@ -41,10 +43,10 @@ struct AuthenticationSwitcher: View {
     @EnvironmentObject var authenticationState: UserAuthenticationState
     
     var body: some View {
-        if (authenticationState.isLoggedIn) {
+        if (authenticationState.isSignedIn) {
             HomeView()
         } else {
             AuthenticationView()
-        }
+     }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct CreateAccountView: View {
 
@@ -36,8 +37,8 @@ struct CreateAccountView: View {
                     SecureField("Confirm Password", text: $con_password)
                         .modifier(InputField())
 
-                    Button(action: {}) {
-                        Text("Login")
+                    Button("Create Account") {
+                        createAccount(email: email, password: password, username: "demo", confirm_password: con_password)
                     }
                     .buttonStyle(ActionButton())
                 }
@@ -45,6 +46,21 @@ struct CreateAccountView: View {
             }
         }
     }
+    
+    private func createAccount(email: String, password: String, username: String, confirm_password: String) {
+            let firebaseManager = FirebaseManager.shared
+
+            firebaseManager.createAccountAndAddUser(email: email, username: username, password: password, con_password: confirm_password) { result in
+                switch result {
+                case .success(let userProfile):
+                    print("User registered successfully: \(userProfile.displayName)")
+                    // Handle success, such as navigating to the next screen
+                case .failure(let error):
+                    print("Error signing up: \(error.localizedDescription)")
+                    // Handle the error, such as displaying an alert to the user
+                }
+            }
+        }
 }
 
 #Preview {
