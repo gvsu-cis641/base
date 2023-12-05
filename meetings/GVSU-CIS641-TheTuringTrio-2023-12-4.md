@@ -1,8 +1,8 @@
 Team name: The Turing Trio
 
-Members present: Nathan, Usman, Zach
+Members present: Usman, Zach
 
-Date: 11/9/23
+Date: 12/4/23
 
 Time: 5:00-5:25
 
