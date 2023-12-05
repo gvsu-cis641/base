@@ -29,6 +29,8 @@
 		9610676D2B0487C700B0714D /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676C2B0487C700B0714D /* EditProfile.swift */; };
 		961067702B054DFD00B0714D /* LeftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676F2B054DFD00B0714D /* LeftIconButton.swift */; };
 		961067722B055C2000B0714D /* LabelsForTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961067712B055C2000B0714D /* LabelsForTextFields.swift */; };
+		961620592B1EC84400249814 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961620582B1EC84400249814 /* ProfileData.swift */; };
+		9616205C2B1EDC9F00249814 /* CircularLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616205B2B1EDC9F00249814 /* CircularLoadingView.swift */; };
 		96CB51E02B1D3A9300114F0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96CB51DF2B1D3A9300114F0E /* GoogleService-Info.plist */; };
 		96CB51E32B1D3C6500114F0E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 96CB51E22B1D3C6500114F0E /* FirebaseAnalytics */; };
 		96CB51E52B1D3C6500114F0E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 96CB51E42B1D3C6500114F0E /* FirebaseAppCheck */; };
@@ -93,6 +95,8 @@
 		9610676C2B0487C700B0714D /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		9610676F2B054DFD00B0714D /* LeftIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftIconButton.swift; sourceTree = "<group>"; };
 		961067712B055C2000B0714D /* LabelsForTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsForTextFields.swift; sourceTree = "<group>"; };
+		961620582B1EC84400249814 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		9616205B2B1EDC9F00249814 /* CircularLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoadingView.swift; sourceTree = "<group>"; };
 		96CB51DF2B1D3A9300114F0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96F1ADFB2AFAAAAD00968C14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = SmartJournal/Features/Profile/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9224B3852AFEA977009D8340 /* UserAuthenticationState.swift */,
+				961620582B1EC84400249814 /* ProfileData.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 		9286BFBF2AF97505005EB5EB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9616205A2B1EDC7E00249814 /* CircularLoadingIndicator */,
 				9610676E2B054DDC00B0714D /* LeftIconButton */,
 				92D6F9942B05642500C7CE0E /* PhotoPicker */,
 				9286BFC02AF9750D005EB5EB /* ImageCarousel */,
@@ -338,6 +344,14 @@
 				9610676F2B054DFD00B0714D /* LeftIconButton.swift */,
 			);
 			path = LeftIconButton;
+			sourceTree = "<group>";
+		};
+		9616205A2B1EDC7E00249814 /* CircularLoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				9616205B2B1EDC9F00249814 /* CircularLoadingView.swift */,
+			);
+			path = CircularLoadingIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +509,7 @@
 			files = (
 				92D6F9932B0546DB00C7CE0E /* EditJournalView.swift in Sources */,
 				9224B3862AFEA977009D8340 /* UserAuthenticationState.swift in Sources */,
+				9616205C2B1EDC9F00249814 /* CircularLoadingView.swift in Sources */,
 				9224B3832AFEA355009D8340 /* CreateAccountView.swift in Sources */,
 				92D6F9962B05643600C7CE0E /* MultiplePhotoPickerViewModel.swift in Sources */,
 				9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */,
@@ -502,6 +517,7 @@
 				96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */,
 				9224B37E2AFE9038009D8340 /* InputField.swift in Sources */,
 				9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */,
+				961620592B1EC84400249814 /* ProfileData.swift in Sources */,
 				96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */,
 				961067722B055C2000B0714D /* LabelsForTextFields.swift in Sources */,
 				92683D912AF97DB800BEF279 /* HomeView.swift in Sources */,
@@ -674,7 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartJournal/Preview Content\"";
-				DEVELOPMENT_TEAM = 9HCRY829GD;
+				DEVELOPMENT_TEAM = W3Y44NT4C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -703,7 +719,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartJournal/Preview Content\"";
-				DEVELOPMENT_TEAM = 9HCRY829GD;
+				DEVELOPMENT_TEAM = W3Y44NT4C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
