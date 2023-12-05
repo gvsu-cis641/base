@@ -26,6 +26,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SmartJournalApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     @StateObject var authenticationState = UserAuthenticationState()
     

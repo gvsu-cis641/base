@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseAuth
 
 
+
 struct HomeView: View {
     private let posts = [PostView(), PostView()]
     var body: some View {
