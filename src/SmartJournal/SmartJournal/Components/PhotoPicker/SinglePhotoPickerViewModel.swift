@@ -19,6 +19,7 @@ final class SinglePhotoPickerViewModel: ObservableObject {
         }
     }
     
+    
     // Learned the use of loadTransferable here: https://developer.apple.com/documentation/photokit/photospicker
     func loadTransferable(from imageSelection: PhotosPickerItem) {
         imageSelection.loadTransferable(type: Image.self) { result in

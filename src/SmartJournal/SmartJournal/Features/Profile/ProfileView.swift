@@ -22,9 +22,20 @@ struct ProfileView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Image(systemName: "person.circle.fill")
-                        .resizable()
-                        .frame(width: 200, height: 200)
+                    if let userPhoto = user.photo {
+                        Image(uiImage: userPhoto)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 200, height: 200)  // Adjust the size as needed
+                            .clipShape(Circle())
+                    }
+                    else {
+                        Image(systemName: "person.circle.fill")
+                            .resizable()
+                            .frame(width: 200, height: 200)
+                            .clipShape(Circle())
+                    }
+                    
                     Spacer()}
                 Spacer()
                 NavigationLink(destination: EditProfileView()) {
