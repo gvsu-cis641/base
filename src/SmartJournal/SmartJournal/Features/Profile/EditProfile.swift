@@ -150,18 +150,15 @@ struct EditProfileView: View {
                             case .failure(let error):
                                 print("Error uploading profile image: \(error.localizedDescription)")
                                 isLoading = false
-                                // Handle the error, show an alert, etc.
                             }
                         }
                 })
                     
                 } else {
-                    // If no image is selected, update the profile without uploading an image
                     viewModel.updateProfile(name: newName, email: newEmail, bio: newBio, profileImageUrl: profilePic)
-                    print("****no i am here")
                     isLoading = false
-                    // Dismiss the view
                     
+                    // Dismiss the view
                     presentationMode.wrappedValue.dismiss()
                 }
             }

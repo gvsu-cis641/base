@@ -55,10 +55,7 @@ class UserProfileViewModel: ObservableObject {
         }
     }
     func fetchUserPhoto(from photoURLString: String) {
-            // Get a reference to the Firebase Storage object using the URL
             let storageReference = Storage.storage().reference(forURL: photoURLString)
-
-            // Now you can use the storageReference as needed, for example, download the data
             storageReference.getData(maxSize: 2 * 1024 * 1024) { [weak self] data, error in
                 guard let self = self else { return }
 
@@ -66,9 +63,7 @@ class UserProfileViewModel: ObservableObject {
                     print("Error downloading image data: \(error.localizedDescription)")
                     return
                 }
-
                 if let imageData = data {
-                    // Update the user's photo with the downloaded image data
                     self.user?.photo = UIImage(data: imageData)
                 }
             }
