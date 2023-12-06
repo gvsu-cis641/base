@@ -13,45 +13,44 @@ struct EditJournalView: View {
     @State private var text = String()
     
     var body: some View {
-        NavigationStack() {
+        VStack {
             VStack {
-                VStack {
-                    
-                    if viewModel.photos == [] {
-                        ImageCarousel(photos: [HashableImage()])
-                    } else {
-                        ImageCarousel(photos: viewModel.photos)
-                    }
-                    
-                    PhotosPicker(selection: $viewModel.imageSelections, matching: .images) {
-                        Text("Upload Photos")
-                    }
-                    .buttonStyle(ActionButton())
+                if viewModel.photos == [] {
+                    ImageCarousel(photos: [HashableImage()])
+                } else {
+                    ImageCarousel(photos: viewModel.photos)
                 }
                 
-                VStack {
-                    TextEditor(text: $text)
-                        .border(.black)
+                PhotosPicker(selection: $viewModel.imageSelections, matching: .images) {
+                    Text("Upload Photos")
                 }
-                
-                .toolbar {
-                    Button(action: navigateToAttributes) {
-                        HStack (alignment: .top) {
-                            Text("Next")
-                            Image(systemName: "chevron.forward")
-                        }
+                .buttonStyle(ActionButton())
+            }
+            
+            VStack {
+                TextEditor(text: $text)
+                    .border(.black)
+            }
+            
+            .toolbar {
+                Button(action: navigateToAttributes) {
+                    HStack (alignment: .top) {
+                        Text("Next")
+                        Image(systemName: "chevron.forward")
                     }
                 }
             }
-            .padding()
         }
+        .padding()
     }
 }
-        
+
 func navigateToAttributes() {
     
 }
 
 #Preview {
-    EditJournalView()
+    NavigationStack {
+        EditJournalView()
+    }
 }

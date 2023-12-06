@@ -25,7 +25,7 @@
 		92D6F9962B05643600C7CE0E /* MultiplePhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6F9952B05643600C7CE0E /* MultiplePhotoPickerViewModel.swift */; };
 		92D6F9982B0587E900C7CE0E /* SinglePhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6F9972B0587E900C7CE0E /* SinglePhotoPickerViewModel.swift */; };
 		96026F6F2AFCC03D0017A391 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F6E2AFCC03D0017A391 /* CustomText.swift */; };
-		96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F712AFCC0B40017A391 /* CustomButton.swift */; };
+		96026F722AFCC0B40017A391 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96026F712AFCC0B40017A391 /* ActionButton.swift */; };
 		9610676D2B0487C700B0714D /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676C2B0487C700B0714D /* EditProfile.swift */; };
 		961067702B054DFD00B0714D /* LeftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610676F2B054DFD00B0714D /* LeftIconButton.swift */; };
 		961067722B055C2000B0714D /* LabelsForTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961067712B055C2000B0714D /* LabelsForTextFields.swift */; };
@@ -86,7 +86,7 @@
 		92D6F9952B05643600C7CE0E /* MultiplePhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePhotoPickerViewModel.swift; sourceTree = "<group>"; };
 		92D6F9972B0587E900C7CE0E /* SinglePhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePhotoPickerViewModel.swift; sourceTree = "<group>"; };
 		96026F6E2AFCC03D0017A391 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
-		96026F712AFCC0B40017A391 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		96026F712AFCC0B40017A391 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		9610676C2B0487C700B0714D /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		9610676F2B054DFD00B0714D /* LeftIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftIconButton.swift; sourceTree = "<group>"; };
 		961067712B055C2000B0714D /* LabelsForTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsForTextFields.swift; sourceTree = "<group>"; };
@@ -325,7 +325,7 @@
 		96026F702AFCC0A20017A391 /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
-				96026F712AFCC0B40017A391 /* CustomButton.swift */,
+				96026F712AFCC0B40017A391 /* ActionButton.swift */,
 			);
 			path = CustomButton;
 			sourceTree = "<group>";
@@ -525,7 +525,7 @@
 				92D6F9962B05643600C7CE0E /* MultiplePhotoPickerViewModel.swift in Sources */,
 				9286BFBE2AF967D4005EB5EB /* PostView.swift in Sources */,
 				92683D962AF999F900BEF279 /* HashableImage.swift in Sources */,
-				96026F722AFCC0B40017A391 /* CustomButton.swift in Sources */,
+				96026F722AFCC0B40017A391 /* ActionButton.swift in Sources */,
 				9224B37E2AFE9038009D8340 /* InputField.swift in Sources */,
 				9286BFC22AF97524005EB5EB /* ImageCarousel.swift in Sources */,
 				961620592B1EC84400249814 /* ProfileData.swift in Sources */,
