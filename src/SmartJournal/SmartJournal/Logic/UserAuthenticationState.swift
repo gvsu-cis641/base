@@ -27,20 +27,20 @@ class UserAuthenticationState: ObservableObject {
             }
         }
     
-    func login(username: String, password: String) async -> Result<Bool, AuthenticationError> {
-        isBusy = true
-            
-            // TODO: Authenticate with backend
-            if self.user != nil {
-                self.isSignedIn = true
-                isBusy = false
-                return .success(true)
-            } else {
-                isBusy = false
-                return .failure(.loginError)
-            }
-        
-    }
+//    func login(username: String, password: String) async -> Result<Bool, AuthenticationError> {
+//        isBusy = true
+//            
+//            // TODO: Authenticate with backend
+//            if self.user != nil {
+//                self.isSignedIn = true
+//                isBusy = false
+//                return .success(true)
+//            } else {
+//                isBusy = false
+//                return .failure(.loginError)
+//            }
+//        
+//    }
     
     func logout() async -> Result<Bool, AuthenticationError> {
         // TODO: Try signing out in backend

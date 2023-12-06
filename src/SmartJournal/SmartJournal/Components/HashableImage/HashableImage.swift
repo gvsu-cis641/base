@@ -12,6 +12,7 @@ struct HashableImage: Hashable, View {
     let id = UUID()
     var image: Image = Image(systemName: "photo")
     
+    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
@@ -19,4 +20,5 @@ struct HashableImage: Hashable, View {
     var body: some View {
         image
     }
+    
 }
