@@ -33,12 +33,14 @@ struct CreateAccountView: View {
 
                     SecureField("Password", text: $password)
                         .modifier(InputField())
+                        .textContentType(.oneTimeCode)
 
                     SecureField("Confirm Password", text: $con_password)
                         .modifier(InputField())
+                        .textContentType(.oneTimeCode)
 
                     Button("Create Account") {
-                        createAccount(email: email, password: password, username: "demo", confirm_password: con_password)
+                        createAccount(email: email, password: password, username: username, confirm_password: con_password)
                     }
                     .buttonStyle(ActionButton())
                 }
@@ -54,10 +56,8 @@ struct CreateAccountView: View {
                 switch result {
                 case .success(let userProfile):
                     print("User registered successfully: \(userProfile.displayName)")
-                    // Handle success, such as navigating to the next screen
                 case .failure(let error):
                     print("Error signing up: \(error.localizedDescription)")
-                    // Handle the error, such as displaying an alert to the user
                 }
             }
         }

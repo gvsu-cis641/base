@@ -7,7 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
-import FirebaseAuth
+
 
 struct AuthenticationView: View {
 
@@ -68,18 +68,6 @@ struct AuthenticationView: View {
             } else if let user = authResult?.user {
                 // Sign-in successful
                 print("Success")
-                
-                // Set the display name
-//                let changeRequest = user.createProfileChangeRequest()
-//                changeRequest.displayName = "Turing_Trio"
-//                
-//                // Commit the changes
-//                changeRequest.commitChanges { error in
-//                    if let error = error {
-//                        print("Error updating profile:", error.localizedDescription)
-//                    } else {
-//                        print("Profile updated successfully")
-//                    }
                 }
             }
         }
