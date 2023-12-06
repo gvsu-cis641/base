@@ -33,12 +33,14 @@ struct CreateAccountView: View {
 
                     SecureField("Password", text: $password)
                         .modifier(InputField())
+                        .textContentType(.oneTimeCode)
 
                     SecureField("Confirm Password", text: $con_password)
                         .modifier(InputField())
+                        .textContentType(.oneTimeCode)
 
                     Button("Create Account") {
-                        createAccount(email: email, password: password, username: "demo", confirm_password: con_password)
+                        createAccount(email: email, password: password, username: username, confirm_password: con_password)
                     }
                     .buttonStyle(ActionButton())
                 }
