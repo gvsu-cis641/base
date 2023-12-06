@@ -38,7 +38,6 @@ struct EditProfileView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    //Need to create a custom component for profile pic
                     if (viewModelPhotoPicker.photo == nil) {
                         Image( systemName: "person.circle.fill")
                         
@@ -60,7 +59,6 @@ struct EditProfileView: View {
                     }
                     
                     else {
-                        //Need to update state of the profile pic so it changes on the profile screen as well
                         viewModelPhotoPicker.photo?.image
                             .resizable()
                             .frame(width: 200, height: 200)
@@ -107,7 +105,6 @@ struct EditProfileView: View {
             Button("Save Changes") {
                 viewModel.updateProfile(name: newName, email: newEmail, bio: newBio)
                 
-                // Dismiss the current view and go back to the profile view
                 presentationMode.wrappedValue.dismiss()
             }
             .buttonStyle(ActionButton())
@@ -117,9 +114,7 @@ struct EditProfileView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(30)
         .onAppear {
-            // Fetch information about the current user when the view appears
             viewModel.fetchCurrentUserData()
-            // Set the initial values in the text fields
             newName = viewModel.user?.displayName ?? ""
             newBio = viewModel.user?.bio ?? ""
             newEmail = viewModel.user?.email ?? ""

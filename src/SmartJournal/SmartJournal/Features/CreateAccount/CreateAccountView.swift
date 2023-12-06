@@ -56,10 +56,8 @@ struct CreateAccountView: View {
                 switch result {
                 case .success(let userProfile):
                     print("User registered successfully: \(userProfile.displayName)")
-                    // Handle success, such as navigating to the next screen
                 case .failure(let error):
                     print("Error signing up: \(error.localizedDescription)")
-                    // Handle the error, such as displaying an alert to the user
                 }
             }
         }

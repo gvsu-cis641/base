@@ -31,7 +31,7 @@ struct ProfileView: View {
                     Text("Edit Profile")
 
                 }
-                .buttonStyle(ActionButton()) // Apply the custom button style
+                .buttonStyle(ActionButton())
                 .padding(.top)
                 .padding(.bottom)
                 
@@ -45,9 +45,6 @@ struct ProfileView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(30)
             .onAppear {
-                // Check if the user is signed in
-
-                // Fetch information about the current user when the view appears
                 viewModel.fetchCurrentUserData()
                 if Auth.auth().currentUser == nil {
                     isSignInPresented = true
@@ -55,7 +52,6 @@ struct ProfileView: View {
             }
             .navigationTitle("Profile")
             .sheet(isPresented: $isSignInPresented) {
-                // Present your authentication view here
                 AuthenticationView()
             }
         } else {

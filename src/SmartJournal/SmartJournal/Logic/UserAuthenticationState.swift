@@ -20,10 +20,7 @@ class UserAuthenticationState: ObservableObject {
     @Published var user: User? = nil
         
         init() {
-            
-            //FirebaseApp.configure()
         
-            // Add an authentication state listener
             Auth.auth().addStateDidChangeListener { (_, user) in
                 self.isSignedIn = (user != nil)
                 self.user = user

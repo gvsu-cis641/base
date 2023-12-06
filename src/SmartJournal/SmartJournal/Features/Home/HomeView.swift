@@ -17,7 +17,6 @@ struct HomeView: View {
         ScrollView {
             VStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, content: {
                 NavigationLink("Profile") {
-//                    ProfileView(userId: Auth.auth().currentUser?.uid ?? "ajksbd")
                     ProfileView()
                 }
                 .buttonStyle(ActionButton())
