@@ -9,14 +9,16 @@ import SwiftUI
 import PhotosUI
 
 struct EditJournalView: View {
-    @StateObject private var viewModel = MultiplePhotoPickerViewModel()
-    @State private var text = String()
+    @StateObject private var viewModel = JournalViewModel()
     
     var body: some View {
         VStack {
             VStack {
-                if viewModel.photos == [] {
-                    ImageCarousel(photos: [HashableImage()])
+                if viewModel.photos.isEmpty {
+                    Image(systemName: "photo")
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(10)
                 } else {
                     ImageCarousel(photos: viewModel.photos)
                 }
@@ -28,15 +30,15 @@ struct EditJournalView: View {
             }
             
             VStack {
-                TextEditor(text: $text)
+                TextEditor(text: $viewModel.journalData.body)
                     .border(.black)
             }
             
             .toolbar {
-                Button(action: navigateToAttributes) {
+                Button(action: viewModel.saveJournal) {
                     HStack (alignment: .top) {
-                        Text("Next")
-                        Image(systemName: "chevron.forward")
+                        Text("Save")
+//                        Image(systemName: "chevron.forward")
                     }
                 }
             }

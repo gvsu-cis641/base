@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct HashableImage: Hashable, View {
+struct HashableUIImage: Hashable, View {
     let id = UUID()
-    var image: Image = Image(systemName: "photo")
+    var uiImage: UIImage = UIImage(systemName: "photo")!
     
     
     func hash(into hasher: inout Hasher) {
@@ -18,7 +18,7 @@ struct HashableImage: Hashable, View {
     }
     
     var body: some View {
-        image
+        Image(uiImage: uiImage)
     }
     
 }
