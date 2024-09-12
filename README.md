@@ -7,7 +7,7 @@ with video and audio streaming to all users within the room.
 
 ## Team Members and Roles
 
-* Joseph Vanliew (Backend Architecture, Frontend Support)
+* [Joseph Vanliew](https://github.com/Joseph-Vanliew/641-HW2-Vanliew) (Backend Architecture, Frontend Support)
 * Member 2 (Role 3, Role 4)
 * Member 3 (Role 5, Role 6)
 
