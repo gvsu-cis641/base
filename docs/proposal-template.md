@@ -6,7 +6,6 @@ Team members:
 - Brenden Kenoval
 - Joachim Kuleafenu
 
-
 # Introduction
 
 (In 2-4 paragraphs, describe your project concept)
