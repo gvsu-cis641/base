@@ -1,11 +1,11 @@
-# Team Name
+# Cooking Recipes Blog - Jay and Aman
 
-Project description (~1 paragraph)
+The website fosters a strong community of cooking enthusiasts, creating a platform for users with a shared interest in food and recipes to connect, share, and learn from each other. By allowing users to post, like, and share recipes, the platform promotes engagement and interaction, ensuring users return and remain active.
 
 ## Team Members and Roles
 
 * [Aman Prajapathi](https://github.com/Amanrsp/CIS641-HW2-Prajapati) (Frontend and Backend)
-* Member 2 (Role 3, Role 4)
+* [Venakata Jayam Pasam](https://github.com/Pasamv/CIS641-HW2-PASAM) (Development & Desinging)
 * Member 3 (Role 5, Role 6)
 
 ## Prerequisites
