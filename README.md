@@ -7,7 +7,7 @@ Our project is a Chatbot system, That is created to address all the queries for 
 
 * [@RuthvikUppala30](https://github.com/RuthvikUppala30) (project Lead, LLM Developer)
 * [@Venkata Surya Manikanta Grandhi](https://github.com/Manikanta106)
-* [@bharghavbolla](https://github.com/bharghavbolla) (Role 5, Role 6)
+* [@bharghavbolla](https://github.com/bharghavbolla) (Frontend Dev, Reseach)
 
 ## Prerequisites
 - Programming Language: Python
