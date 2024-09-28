@@ -1,14 +1,21 @@
-Team name:
+Team name: Jay and Aman
 
-Team members:
+Team members: Venakata Jayanth Pasam, Aman Prajapati
 
 # Introduction
+- The website fosters a strong community of cooking enthusiasts, creating a platform for users with a shared interest in food and recipes to connect, share, and learn from each other. By allowing users to post, like, and share recipes, the platform promotes engagement and interaction, ensuring users return and remain active.
+- The platform can generate revenue through various channels by Displaying ads relevant to cooking, kitchen tools, or food products and Partnering with retailers or brands to earn commissions from sales generated through recipe recommendations.
 
-(In 2-4 paragraphs, describe your project concept)
 
 # Anticipated Technologies
 
-(What technologies are needed to build this project)
+- HTML
+- CSS
+- JS
+- React
+- Python
+- Github
+- MongoDB
 
 # Method/Approach
 
