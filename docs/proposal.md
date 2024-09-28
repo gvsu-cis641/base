@@ -1,42 +1,42 @@
-**Team name**:  
+**Team name**:  Pengun
 
 **Team members**: Hamin Hong
 
 # Introduction
 
-The goal of this project is to develop a generative AI system capable of producing new guitar chords and original music compositions. Using Variational Autoencoders (VAEs), we aim to teach the model to recognize patterns in music, particularly guitar chord progressions and musical structures. The objective is to create a tool that allows users to generate fresh musical ideas, with the system functioning as a partner in the creative process.
+The main goal of this project is to create a generative AI system that can generate new guitar chords and original music. Using Variational Autoencoders (VAEs), we’ll train the model to pick up on musical patterns, focusing on chord progressions and overall structure. The aim here is to provide a tool that helps users come up with new musical ideas, where the system acts more as a creative partner, not a replacement.
 
 # Anticipated Technologies
 
-- **Variational Autoencoders (VAEs)** will form the backbone of the generative model.
-- **Python**, along with **TensorFlow** or **PyTorch**, will be used for model development and training.
-- **Music21** or a similar music-processing library will assist in handling musical data.
-- A **dataset** of labeled guitar chords and compositions will provide the necessary training data.
-- We'll use **Git/GitLab** for version control and collaboration.
+- **VAEs** will be the core of the generative process.
+- **Python** with **TensorFlow** or **PyTorch** will be used for development and training.
+- I’ll use **Music21** or a similar library to handle musical data efficiently.
+- A well-labeled **dataset** of guitar chords and compositions will be critical for training.
+- **Git/GitLab** will be the go-to for version control and collaboration throughout.
 
 # Method/Approach
 
-1. **Data Collection and Preprocessing**: We will gather a diverse dataset of guitar music with labeled chord progressions. It’s crucial to ensure the dataset is well-prepared and consistent before feeding it into the model.
+1. **Data Collection and Preprocessing**: First, I’ll gather a diverse dataset of guitar music, making sure everything is labeled and preprocessed correctly. This step will be essential for training the model accurately.
    
-2. **Model Development**: We'll train the VAE using this dataset. The goal is for the model to recognize patterns and generate guitar chord sequences and compositions based on those learned patterns.
+2. **Model Development**: Next, I’ll train the VAE using this dataset. The main task here is to teach the model to recognize patterns in chord sequences and generate new compositions based on that.
 
-3. **Output Generation**: We'll test the generated outputs, adjusting the VAE parameters where necessary, to produce guitar progressions that are musically sound.
+3. **Output Generation**: I’ll start generating outputs and adjust the model’s parameters as needed to make sure the generated music sounds musically coherent.
 
-4. **User Interface Development**: I'll develop an interface where users can input their preferences and generate new music. The interface will allow users to fine-tune outputs based on their feedback.
+4. **User Interface Development**: I’ll develop an interface that allows users to input preferences and generate music. This will also let users tweak the generated outputs.
 
-5. **Testing and Refinement**: Continuous feedback from testing will be crucial. We'll refine the model to ensure the outputs meet both creative and usability standards.
+5. **Testing and Refinement**: Throughout the process, I’ll gather feedback and refine the model as necessary to ensure the tool is both creative and user-friendly.
 
 # Estimated Timeline
 
-- **Week 1-2**: Focus on gathering and preprocessing data.
-- **Week 3-5**: Develop and train the VAE model using the dataset.
-- **Week 6-7**: Begin testing and fine-tuning the generative model.
+- **Week 1-2**: Data gathering and preprocessing.
+- **Week 3-5**: Train the VAE model with the collected dataset.
+- **Week 6-7**: Start testing and tweaking the generated outputs.
 - **Week 8-9**: Develop and integrate the user interface with the model.
-- **Week 10**: Final testing, refinement, and incorporating user feedback.
+- **Week 10~**: Final testing, refinements, and integrating user feedback.
 
 # Anticipated Problems
 
-- **Data Quality**: Ensuring the dataset is diverse enough to capture a wide variety of styles will be a challenge.
-- **Model Training**: The VAE model may require extensive fine-tuning to produce high-quality, coherent music.
-- **User Interface Complexity**: Developing an interface that makes the AI-generated outputs intuitive and user-friendly might take significant effort.
-- **Musical Creativity**: Balancing randomness with musically acceptable outputs will be critical, ensuring that the generated music feels creative but not chaotic.
+- **Data Quality**: It might be tough to get a dataset that’s diverse enough to cover different musical styles.
+- **Model Training**: Fine-tuning the VAE to generate coherent and high-quality music might take a lot of time and computational resources.
+- **User Interface**: Making the interface user-friendly and intuitive could be a challenge, especially when it comes to presenting the generated music in a meaningful way.
+- **Music Creativity**: Finding the balance between randomness and musical quality will be key. We want the generated outputs to be creative but still make musical sense.
