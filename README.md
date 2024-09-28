@@ -5,8 +5,8 @@ Our project is a Chatbot system, That is created to address all the queries for 
 
 ## Team Members and Roles
 
-* [@RuthvikUppala30](https://github.com/RuthvikUppala30) (Role 1, Role 2)
-* [@Venkata Surya Manikanta Grandhi](https://github.com/Manikanta106) (Role 3, Role 4)
+* [@RuthvikUppala30](https://github.com/RuthvikUppala30) (project Lead, LLM Developer)
+* [@Venkata Surya Manikanta Grandhi](https://github.com/Manikanta106)
 * [@bharghavbolla](https://github.com/bharghavbolla) (Role 5, Role 6)
 
 ## Prerequisites
