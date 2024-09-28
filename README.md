@@ -6,7 +6,7 @@ Our project is a Chatbot system, That is created to address all the queries for 
 ## Team Members and Roles
 
 * [@RuthvikUppala30](https://github.com/RuthvikUppala30) (Role 1, Role 2)
-* [@member2_username](https://github.com/member2_username) (Role 3, Role 4)
+* [@Venkata Surya Manikanta Grandhi](https://github.com/Manikanta106) (Role 3, Role 4)
 * [@member3_username](https://github.com/member3_username) (Role 5, Role 6)
 
 ## Prerequisites
