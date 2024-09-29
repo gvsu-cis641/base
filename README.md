@@ -9,7 +9,7 @@ with video and audio streaming to all users within the room.
 
 * [Joseph Vanliew](https://github.com/Joseph-Vanliew/641-HW2-Vanliew) (Backend Architecture, Frontend Support)
 * [Joachim Kuleafenu](https://github.com/kuleafenu/641-HW2-Kuleafenu) (Backend Developer, Frontend Support)
-* Member 3 (Role 5, Role 6)
+* [Brenden Koneval](https://github.com/konevalb/641-HW2-Koneval) (Frontend Developer, Backend Support)
 
 ## Prerequisites
 
