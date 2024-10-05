@@ -39,14 +39,14 @@ Make the project accessible for demo and presentation.
 
 (Figure out what your major milestones for this project will be, including how long you anticipate it *may* take to reach that point)
 
-Week 1: Requirements Gathering & Planning
-Week 2: Frontend Development - Initial Setup & Basic Layout
-Week 3: Frontend Development - React Components & Styling
-Week 4: Backend Development - Flask Setup & Database Integration
-Week 5: Backend Development - User Authentication & Search Functionality
-Week 6: Frontend-Backend Integration
-Week 7: Testing & Debugging
-Week 8: Deployment & Final Presentation
+- Week 1: Requirements Gathering & Planning
+- Week 2: Frontend Development - Initial Setup & Basic Layout
+- Week 3: Frontend Development - React Components & Styling
+- Week 4: Backend Development - Flask Setup & Database Integration
+- Week 5: Backend Development - User Authentication & Search Functionality
+- Week 6: Frontend-Backend Integration
+- Week 7: Testing & Debugging
+- Week 8: Deployment & Final Presentation
 
 # Anticipated Problems
 
