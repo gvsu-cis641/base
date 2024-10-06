@@ -7,7 +7,6 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
-	"github.com/pion/webrtc/v3"
 )
 
 const (
@@ -64,28 +63,27 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func createPeerConnection() (*webrtc.PeerConnection, error) {
+// func CreatePeerConnection() (*webrtc.PeerConnection, error) {
 
-	iceServer := []webrtc.ICEServer{
-		{
-			URLs: []string{"stun:stun.l.google.com.19302"},
-		},
-	}
+// 	iceServer := []webrtc.ICEServer{
+// 		{
+// 			URLs: []string{"stun:stun.l.google.com.19302"},
+// 		},
+// 	}
 
-	// Create a new RTCPeerConnection
+// 	// Create a new RTCPeerConnection
+// 	config := webrtc.Configuration{
+// 		ICEServers: iceServer,
+// 	}
+// 	peerConnection, err := webrtc.NewPeerConnection(config)
+// 	if err != nil {
+// 		return nil, err
+// 	}
 
-	config := webrtc.Configuration{
-		ICEServers: iceServer,
-	}
-	peerConnection, err := webrtc.NewPeerConnection(config)
-	if err != nil {
-		return nil, err
-	}
+// 	// Handle ICE connection state changes
+// 	peerConnection.OnICEConnectionStateChange(func(state webrtc.ICEConnectionState) {
+// 		fmt.Printf("ICE Connection State has changed: %s\n", state.String())
+// 	})
 
-	// Handle ICE connection state changes
-	peerConnection.OnICEConnectionStateChange(func(state webrtc.ICEConnectionState) {
-		fmt.Printf("ICE Connection State has changed: %s\n", state.String())
-	})
-
-	return peerConnection, nil
-}
+// 	return peerConnection, nil
+// }
