@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the Software Requirements Specification (SRS) for the CampusConnect AI Chatbot, designed to enhance the user experience for students, faculty, and prospective applicants on the college website. The chatbot will efficiently handle inquiries related to admissions, event registration, appointment scheduling, and library services.
+This document outlines the Software Requirements Specification (SRS) for the Campus AI Chatbot, designed to enhance the user experience for students, faculty, and prospective applicants on the college website. The chatbot will efficiently handle inquiries related to admissions, event registration, appointment scheduling, and library services.
 
 ## Functional Requirements
 
