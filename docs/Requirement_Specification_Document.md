@@ -1,4 +1,4 @@
-# Software Requirements Specification (SRS) for CampusConnect AI Chatbot
+# Software Requirements Specification (SRS) for Campus AI Chatbot
 
 ## Overview
 
