@@ -5,22 +5,14 @@ This document outlines the functional and non-functional requirements for the Mu
 
 ## Functional Requirements
 
-1. **User Input Handling**
-   1. FR1: The system shall allow users to input seed melodies to guide music generation.
-   2. FR2: The system shall enable users to define genre, tempo, and chord preferences.
-   3. FR3: The system shall provide a real-time preview of the generated music.
-   4. FR4: The system shall allow users to export compositions as MIDI or audio files.
-
-2. **Customization Options**
-   1. FR5: The system shall allow users to adjust VAE parameters dynamically.
-   2. FR6: The system shall enable users to select between different output styles (e.g., jazz, classical, rock).
+- **F1:** The system shall allow users to input seed melodies or chord progressions to guide the generated output.  
+- **F2:** The system shall generate new music compositions in real-time based on user-defined parameters.  
+- **F3:** The system shall provide an export feature to save generated compositions as MIDI or audio files for external use.  
+- **F4:** The system shall allow users to adjust VAE parameters (such as latent space dimensions) to influence the creative process dynamically.  
 
 ## Non-Functional Requirements
 
-1. **Performance**
-   1. NFR1: The system shall generate musical outputs within 5 seconds of input.
-   2. NFR2: The system shall maintain 95% uptime to ensure reliability.
-
-2. **Usability**
-   1. NFR3: The system shall have an intuitive user interface that requires less than 10 minutes of exploration.
-   2. NFR4: The system shall support cross-platform compatibility, including web and mobile devices.
+- **N1:** The system shall produce musical outputs within 5 seconds of receiving input to ensure a smooth user experience.  
+- **N2:** The system shall maintain a 95% uptime to support users with uninterrupted access.  
+- **N3:** The user interface shall be intuitive and require no more than 10 minutes of exploration to understand all features.  
+- **N4:** The system shall support cross-platform compatibility, including web browsers and mobile devices, to maximize accessibility.  
