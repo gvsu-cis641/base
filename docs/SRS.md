@@ -1,5 +1,5 @@
 # Overview
-This document serves as the Software Requirements Specification (SRS) for the MIDI Music Generation and Reconstruction project. It outlines the functional and non-functional requirements, change management plan, traceability between requirements and artifacts, and links to all associated project artifacts.
+This document serves as the Software Requirements Specification (SRS) for the Music Generation project. It outlines the functional and non-functional requirements.
 
 # Software Requirements
 The following section describes the functional and non-functional requirements for the project.
