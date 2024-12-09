@@ -94,4 +94,4 @@ The following section describes the functional and non-functional requirements f
 | NFR22 | Encrypt all saved files to ensure data integrity. |
 | NFR23 | Validate inputs to avoid code injection vulnerabilities. |
 | NFR24 | Ensure compliance with GDPR for data handling. |
-| NFR25 | Provide audit logs for all executed processes. |
+| NFR25 | Provide audit logs for all executed processes.  |
