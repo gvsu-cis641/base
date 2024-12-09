@@ -9,4 +9,4 @@ The goal of this project is to develop a generative AI system capable of produci
 
 ## Prerequisites
 
-## Run Instructions
+## Run Instructions 
